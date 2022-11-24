@@ -14,16 +14,38 @@ const Works = () => (
       <Heading as="h3" fontSize={20} mb={4}>
         Projects
       </Heading>
+      <Section delay={0.1}>
+        <WorkGridItem
+          id="fakeface"
+          title="Fake Face Classifier"
+          thumbnail={thumbFakeFace}
+        >
+          A Machine Learning model using CNN to classify fake images generted
+          using Generative Adversarial Networks (GANs).
+        </WorkGridItem>
+      </Section>
+      <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section delay={0.1}>
           <WorkGridItem
             id="fakeface"
             title="Fake Face Classifier"
             thumbnail={thumbFakeFace}
           >
-            A Machine Learning model using CNN to classify fake images generted using Generative Adversarial Networks (GANs).
+            A Machine Learning model using CNN to classify fake images generted
+            using Generative Adversarial Networks (GANs).
           </WorkGridItem>
         </Section>
-
+        <Section delay={0.1}>
+          <WorkGridItem
+            id="fakeface"
+            title="Fake Face Classifier"
+            thumbnail={thumbFakeFace}
+          >
+            A Machine Learning model using CNN to classify fake images generted
+            using Generative Adversarial Networks (GANs).
+          </WorkGridItem>
+        </Section>
+      </SimpleGrid>
     </Container>
   </Layout>
 )

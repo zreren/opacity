@@ -18,8 +18,8 @@ import { HamburgerIcon } from '@chakra-ui/icons'
 import ThemeToggleButton from './theme-toggle-button'
 import { IoLogoGithub } from 'react-icons/io5'
 import { IoLanguage } from 'react-icons/io5'
-
-const LinkItem = ({ href, path, target, children, ...props }) => {
+import { useRouter } from 'next/router'
+const LinkItem = ({ href, path, target, children,local, ...props }) => {
   const active = path === href
   const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900')
   return (
@@ -39,7 +39,8 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
 
 const Navbar = props => {
   const { path } = props
-
+  const router = useRouter();
+  const {locale} = router;
   return (
     <Box
       position="fixed"
@@ -96,6 +97,9 @@ const Navbar = props => {
           aria-label="Toggle theme"
           colorScheme={useColorModeValue('gray', 'gray')}
           icon={useColorModeValue(<IoLanguage />, <IoLanguage />)}
+          onClick={() => {
+            router.push("", "", { locale: locale==="cn"?"en":"cn" });
+          }}
         ></IconButton>
           <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
             <Menu isLazy id="navbar-menu">

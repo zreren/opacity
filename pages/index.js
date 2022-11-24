@@ -16,6 +16,7 @@ import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
+import { useRouter } from 'next/router'
 import { GridItem } from '../components/grid-item'
 import {
   IoLogoTwitter,
@@ -23,16 +24,32 @@ import {
   IoLogoGithub,
   IoLogoLinkedin,
   IoLogoYoutube
-} from 'react-icons/io5'
-import {  TbBrandNextjs} from 'react-icons/tb';
+} from 'react-icons/io5';
+import {SiGmail} from 'react-icons/si'
 import Image from 'next/image'
+
+const content = {
+  "cn":{
+    greeting:"您好，我是Opacity",
+    introduce:"计算机专业大四在读 (全栈开发)",
+    content:"Opacity，更习惯的是，你称呼我为Eren.在我12岁的时候因为游戏开始学习编程。我喜欢的方向是游戏3D，vr开发。期望能够做有趣的事情。"
+  },
+  "en":{
+    greeting:"Hi there, I am Opacity focusing on SDE",
+    introduce:"CS undergrad (Full Stack Developer)",
+    content:"Opacity,my prefix,which indicate that i want to adjust my presence. Also,you could call me Eren.I began programming since i was 12 years old.I especially like games and 3d development.Now i am focus on webgl and webvr.It is hoped that i could do something interesting && meaningful"
+
+  }
+}
 
 const ProfileImage = chakra(Image, {
   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
 })
 
-const Home = () => (
-  <Layout>
+const Home = () => {
+  const { locale, locales, defaultLocale, asPath } = useRouter();
+  return(
+    <Layout>
     <Container>
       <Box
         borderRadius="lg"
@@ -42,7 +59,7 @@ const Home = () => (
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
         css={{ backdropFilter: 'blur(10px)' }}
       >
-        Hi there, I am Opacity focusing on SDE
+      {content[locale].greeting}
       </Box>
 
       <Box display={{ md: 'flex' }}>
@@ -50,7 +67,7 @@ const Home = () => (
           <Heading as="h2" variant="page-title">
             Opacity Eren
           </Heading>
-          <p>CS undergrad (Full Stack Developer)</p>
+          <p>{content[locale].introduce}</p>
           <p
           >
             Mainly use  Next.js + TypeScript +
@@ -90,11 +107,7 @@ const Home = () => (
           About
         </Heading>
         <Paragraph>
-          Opacity,my prefix,which indicate that i want to adjust my
-          presence.Also,you could call me Eren.I began programming since i was
-          12 years old.I especially like games and 3d development.Now i am focus
-          on webgl and webvr.It is hoped that i could do something interesting
-          && meaningful
+        {content[locale].content}
           <br></br>
         </Paragraph>
         <Box align="center" my={4}>
@@ -118,7 +131,7 @@ const Home = () => (
                 colorScheme="teal"
                 leftIcon={<IoLogoGithub />}
               >
-                @zrEren
+               Github @zrEren
               </Button>
             </Link>
           </ListItem>
@@ -132,7 +145,21 @@ const Home = () => (
                 colorScheme="teal"
                 leftIcon={<IoLogoYoutube />}
               >
-                @Eren
+              Youtube  @Eren
+              </Button>
+            </Link>
+          </ListItem>
+          <ListItem>
+            <Link
+              href="mailto:simplelogin-newsletter.2tws4@simplelogin.com"
+              target="_blank"
+            >
+              <Button
+                variant="ghost"
+                colorScheme="teal"
+                leftIcon={<SiGmail />}
+              >
+              Mail Me @Eren
               </Button>
             </Link>
           </ListItem>
@@ -140,7 +167,8 @@ const Home = () => (
       </Section>
     </Container>
   </Layout>
-)
+  )
+}
 
 export default Home
 export { getServerSideProps } from '../components/chakra'

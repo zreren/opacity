@@ -3,12 +3,12 @@ import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
 import { loadGLTFModel } from '../lib/model'
 import { DogSpinner, DogContainer } from './voxel-dog-loader'
-// import { DRACOLoader } from 'three/addons/loaders/DRACOLoader.js';
 
 function easeOutCirc(x) {
   return Math.sqrt(1 - Math.pow(x - 1, 4))
 }
-
+let mixer;
+const clock = new THREE.Clock();
 const VoxelDog = () => {
   const refContainer = useRef()
   const [loading, setLoading] = useState(true)
@@ -78,9 +78,14 @@ const VoxelDog = () => {
       loadGLTFModel(scene, '/LittlestTokyo.gltf', {
         receiveShadow: false,
         castShadow: false
-      }).then(() => {
+      }).then((obj,gltfibj) => {
+        console.log(obj,'gltfObject')
+        mixer = new THREE.AnimationMixer( scene );
+				mixer.clipAction( obj.animations[ 0 ] ).play();
         animate()
         scene.scale.set(0.01,0.01,0.01)
+        // mixer = new THREE.AnimationMixer( scene. );
+				// mixer.clipAction( scene.animations[ 0 ] ).play();
         setLoading(false)
       })
 
@@ -88,7 +93,9 @@ const VoxelDog = () => {
       let frame = 0
       const animate = () => {
         req = requestAnimationFrame(animate)
+        const delta = clock.getDelta();
 
+				mixer.update( delta );
         frame = frame <= 100 ? frame + 1 : frame
 
         if (frame <= 100) {

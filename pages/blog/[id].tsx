@@ -37,13 +37,11 @@ export default function Article({ postData }) {
 export async function getStaticPaths({locales}) {
   console.log(postsDir,'postsDir')
   const paths = (await getFileIds(postsDir)).map(id => 
-    {
-      console.log(id,'paths id')
       locales.map((locale)=>({
         params: { id },
         locale
     }))
-    }).flat();
+    ).flat();
   console.log(paths,"paths log")
   return {
     paths,

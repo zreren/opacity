@@ -1,0 +1,21 @@
+.swiper-button-next, .swiper-rtl .swiper-button-prev{
+    top: 60px !important;
+    right: 0px;
+  }
+  .swiper-button-prev, .swiper-rtl .swiper-button-next{
+    top: 60px !important;
+  }
+  .swiper-button-next,.swiper-button-prev{
+    /* background: rgba(213, 247, 135, 0.8); */
+    border-radius: 50%;
+    width: 2rem !important;
+    height: 2rem !important;
+  }
+  .swiper-button-next:after, .swiper-button-prev:after{
+    font-size: 1rem !important;
+    color: white;
+  }
+
+  .swiper-button-next, .swiper-rtl .swiper-button-prev{
+    right: -0px;
+  }

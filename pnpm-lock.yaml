@@ -18,6 +18,7 @@ specifiers:
   react-pdf: ^5.7.2
   remark: ^14.0.2
   remark-html: ^15.0.1
+  swiper: ^8.4.5
   three: ^0.139.2
   typescript: ^4.9.3
 
@@ -36,6 +37,7 @@ dependencies:
   react-pdf: 5.7.2_rtktkkzwwhm6za5nkhtbzdfc3a
   remark: 14.0.2
   remark-html: 15.0.1
+  swiper: 8.4.5
   three: 0.139.2
 
 devDependencies:
@@ -2367,6 +2369,12 @@ packages:
       esutils: 2.0.3
     dev: true
 
+  /dom7/4.0.4:
+    resolution: {integrity: sha512-DSSgBzQ4rJWQp1u6o+3FVwMNnT5bzQbMb+o31TjYYeRi05uAcpF8koxdfzeoe5ElzPmua7W7N28YJhF7iEKqIw==}
+    dependencies:
+      ssr-window: 4.0.2
+    dev: false
+
   /electron-to-chromium/1.4.284:
     resolution: {integrity: sha512-M8WEXFuKXMYMVr45fo8mq0wUrrJHheiKZf6BArTKk9ZBYCKJEOU5H8cdWgDT+qCVZf7Na4lVUaZsA+h6uA9+PA==}
     dev: false
@@ -4286,6 +4294,10 @@ packages:
     resolution: {integrity: sha512-D9cPgkvLlV3t3IzL0D0YLvGA9Ahk4PcvVwUbN0dSGr1aP0Nrt4AEnTUbuGvquEC0mA64Gqt1fzirlRs5ibXx8g==}
     dev: false
 
+  /ssr-window/4.0.2:
+    resolution: {integrity: sha512-ISv/Ch+ig7SOtw7G2+qkwfVASzazUnvlDTwypdLoPoySv+6MqlOV10VwPSE6EWkGjhW50lUmghPmpYZXMu/+AQ==}
+    dev: false
+
   /string.prototype.matchall/4.0.8:
     resolution: {integrity: sha512-6zOCOcJ+RJAQshcTvXPHoxoQGONa3e/Lqx90wUA+wEzX78sg5Bo+1tQo4N0pohS0erG9qtCqJDjNCQBjeWVxyg==}
     dependencies:
@@ -4391,6 +4403,15 @@ packages:
   /supports-preserve-symlinks-flag/1.0.0:
     resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==}
     engines: {node: '>= 0.4'}
+
+  /swiper/8.4.5:
+    resolution: {integrity: sha512-zveyEFBBv4q1sVkbJHnuH4xCtarKieavJ4SxP0QEHvdpPLJRuD7j/Xg38IVVLbp7Db6qrPsLUePvxohYx39Agw==}
+    engines: {node: '>= 4.7.0'}
+    requiresBuild: true
+    dependencies:
+      dom7: 4.0.4
+      ssr-window: 4.0.2
+    dev: false
 
   /tapable/2.2.1:
     resolution: {integrity: sha512-GNzQvQTOIP6RyTfE2Qxb8ZVlNmw0n88vp1szwWRimP02mnTsx3Wtn5qRdqY9w2XduFNUgvOwhNnQsjwCp+kqaQ==}

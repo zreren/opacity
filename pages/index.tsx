@@ -17,7 +17,8 @@ import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { useRouter } from 'next/router'
-import { GridItem } from '../components/grid-item'
+import { GridItem } from '../components/grid-item';
+import { Navigation, Pagination, Scrollbar, Autoplay } from "swiper";
 import {
   IoLogoTwitter,
   IoLogoInstagram,
@@ -29,7 +30,11 @@ import {
 import { SiGmail } from 'react-icons/si'
 import Image from 'next/image'
 import React from 'react'
-
+import { getAllFiles } from '../lib/posts-md';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { WorkGridItem } from '../components/grid-item'
+import 'swiper/css';
+import "swiper/css/navigation";
 const content = {
   cn: {
     greeting: '您好，我是Opacity',
@@ -49,7 +54,7 @@ const ProfileImage = chakra(Image, {
   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
 })
 
-const Home = () => {
+const Home = ({postData}) => {
   const { locale, locales, defaultLocale, asPath } = useRouter()
   return (
     <Layout title="">
@@ -129,6 +134,7 @@ const Home = () => {
             </NextLink> */}
           </Box>
         </Section>
+        <ProjectSwiper postData={postData}></ProjectSwiper>
 
         <Section delay={0.3}>
           <Heading as="h3" variant="section-title">
@@ -180,6 +186,53 @@ const Home = () => {
     </Layout>
   )
 }
-
+let _locale;
+let postsDir = 'projects';
+const ProjectSwiper = ({postData}) => {
+  return (
+    <Swiper
+      modules={[Navigation, Autoplay]}
+      spaceBetween={50}
+      slidesPerView={2}
+      navigation
+      loop={false}
+      autoplay={{
+        delay: 3000,
+        disableOnInteraction: false,
+      }}
+      onSlideChange={() => console.log('slide change')}
+      onSwiper={(swiper) => console.log(swiper)}
+    >
+      {postData.map((item)=>{
+        return (
+          <SwiperSlide>
+            <Section delay={0.1} key={item.id}>
+              <WorkGridItem
+                path={`/projects/[id]`}
+                id={item.id}
+                locale={_locale}
+                title={item.title}
+                thumbnail={item.interface}
+              >
+                {item.description}
+              </WorkGridItem>
+            </Section>
+          </SwiperSlide>
+        )
+      })}
+    </Swiper>
+  );
+}
+export async function getStaticProps(context) {
+  _locale = context.locale
+  console.log(context, 'context')
+  // const { locale, locales, defaultLocale, asPath } = useRouter();
+  postsDir = `projects/${ _locale}`
+  return {
+    props: {
+      postData: await getAllFiles(postsDir)
+    }
+  }
+}
 export default Home
-export { getServerSideProps } from '../components/chakra'
+// export { getServerSideProps } from '../components/chakra'

@@ -6,7 +6,6 @@ interface: /git.png
 ---
 # 简介
 
-GitKraken是一款跨平台的Git Gui工具，与其他Git Gui 工具不同的是，GitKraken的界面和交互设计非常优秀，可以非常轻易地进行分支切换及文件查看，冲突处理。不过其采用Electron作为开发，内存占用较大，如果能用tarui开发会更好一点，后续我也有打算使用
-Tarui开发一款Git Gui工具。
-。
-![interface](/public/git1.png)
+GitKraken is a cross-platform Git Gui tool. Different from other Git Gui tools, GitKraken has an excellent interface and interaction design, which makes it very easy to switch branches, view files, and handle conflicts. However, it uses Electron for development, which takes up a lot of memory. It would be better if it can be developed with tarui. I also plan to use Tarui to develop a Git Gui tool in the future.
+
+![interface](/git1.png)

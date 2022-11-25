@@ -27,6 +27,7 @@ import {
 } from 'react-icons/io5';
 import {SiGmail} from 'react-icons/si'
 import Image from 'next/image'
+import React from 'react'
 
 const content = {
   "cn":{

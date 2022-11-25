@@ -8,6 +8,7 @@ specifiers:
   eslint: ^8.13.0
   eslint-config-next: ^12.1.5
   framer-motion: ^6.3.0
+  i18next: ^22.0.6
   next: ^12.1.5
   prettier: ^2.6.2
   react: ^17.0.2
@@ -15,6 +16,7 @@ specifiers:
   react-icons: ^4.3.1
   react-pdf: ^5.7.2
   three: ^0.139.2
+  typescript: ^4.9.3
 
 dependencies:
   '@chakra-ui/icons': 1.1.7_hfkrmpsivduzurhvt3phpc2i3i
@@ -22,6 +24,7 @@ dependencies:
   '@emotion/react': 11.10.5_dzj4tgexvvjhyxdh56ztoytblu
   '@emotion/styled': 11.10.5_ntk3xc32nev3giwk5xrmfa5exu
   framer-motion: 6.5.1_sfoxds7t5ydpegc3knd667wn6m
+  i18next: 22.0.6
   next: 12.3.4_m5j7lwbckoquomtbl6yhnt55ua
   react: 17.0.2
   react-dom: 17.0.2_react@17.0.2
@@ -33,6 +36,7 @@ devDependencies:
   eslint: 8.28.0
   eslint-config-next: 12.3.4_hsf322ms6xhhd4b5ne6lb74y4a
   prettier: 2.7.1
+  typescript: 4.9.3
 
 packages:
 
@@ -2298,8 +2302,8 @@ packages:
     engines: {node: '>= 4'}
     dev: false
 
-  /enhanced-resolve/5.10.0:
-    resolution: {integrity: sha512-T0yTFjdpldGY8PmuXXR0PyQ1ufZpEGiHVrp7zHKB7jdR4qlmZHhONVM5AQOAWXuF/w3dnHbEQVrNptJgt7F+cQ==}
+  /enhanced-resolve/5.12.0:
+    resolution: {integrity: sha512-QHTXI/sZQmko1cbDoNAa3mJ5qhWUUNAq3vR0/YiD379fWQrcfuoX1+HW2S0MTt7XmoPLapdaDKUtelUSPic7hQ==}
     engines: {node: '>=10.13.0'}
     dependencies:
       graceful-fs: 4.2.10
@@ -2942,6 +2946,12 @@ packages:
     resolution: {integrity: sha512-/gGivxi8JPKWNm/W0jSmzcMPpfpPLc3dY/6GxhX2hQ9iGj3aDfklV4ET7NjKpSinLpJ5vafa9iiGIEZg10SfBw==}
     dependencies:
       react-is: 16.13.1
+    dev: false
+
+  /i18next/22.0.6:
+    resolution: {integrity: sha512-RlreNGoPIdDP4QG+qSA9PxZKGwlzmcozbI9ObI6+OyUa/Rp0EjZZA9ubyBjw887zVNZsC+7FI3sXX8oiTzAfig==}
+    dependencies:
+      '@babel/runtime': 7.20.1
     dev: false
 
   /ignore/5.2.0:
@@ -4138,7 +4148,7 @@ packages:
       acorn-import-assertions: 1.8.0_acorn@8.8.1
       browserslist: 4.21.4
       chrome-trace-event: 1.0.3
-      enhanced-resolve: 5.10.0
+      enhanced-resolve: 5.12.0
       es-module-lexer: 0.9.3
       eslint-scope: 5.1.1
       events: 3.3.0

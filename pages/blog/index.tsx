@@ -12,7 +12,7 @@ import { useRouter } from 'next/router'
 let postsDir = 'articles'
 // fetch array of all article posts
 let _locale;
-export async function getServerSideProps(context) {
+export async function getStaticProps(context) {
   _locale = context.locale
   console.log(context, 'context')
   // const { locale, locales, defaultLocale, asPath } = useRouter();

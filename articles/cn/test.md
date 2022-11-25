@@ -1,7 +1,7 @@
 ---
 title: 开箱即用的简历系统
 description: 用户端 + 管理端 + Next.js API.
-date: 2021-09-01
+date: 2022-09-01
 interface: /card.png
 ---
 # 简介

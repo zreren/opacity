@@ -5,7 +5,7 @@ import Section from '@/components/section'
 import { WorkGridItem } from '@/components/grid-item'
 import thumbComs from '@/public/images/works/coms-home.png'
 import thumbadulting101 from '@/public/images/works/adulting101-home.png'
-import thumbFakeFace from '@/public/images/works/fakeface-home.png'
+import thumbFakeFace from '@/public/git.png'
 import thumbHandGesture from '@/public/images/works/handgesture-home.png'
 import { getAllFiles } from '../../lib/posts-md'
 import { useRouter } from 'next/router'
@@ -32,23 +32,23 @@ export default function index({ postData }) {
         <Heading as="h3" fontSize={20} mb={4}>
           Blog
         </Heading>
-        <Section delay={0.1}>
+        {/* <Section delay={0.1}>
           <WorkGridItem
             path="/blog/"
             id={postData.id}
-            title="Git Gui工具推荐"
+            title="Git Gui工具GitKraken推荐"
             thumbnail={thumbFakeFace}
           >
             我推荐的一款Git Gui工具
           </WorkGridItem>
-        </Section>
+        </Section> */}
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
           {postData.map(post => (
-            <Section delay={0.1}>
+            <Section delay={0.1} key={post.id}>
               <WorkGridItem
                 path={`/blog/[id]`}
                 id={post.id}
-                locale={ _locale}
+                locale={_locale}
                 title={post.title}
                 thumbnail={post.interface}
               >

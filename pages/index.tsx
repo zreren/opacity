@@ -50,7 +50,7 @@ const ProfileImage = chakra(Image, {
 const Home = () => {
   const { locale, locales, defaultLocale, asPath } = useRouter();
   return(
-    <Layout>
+    <Layout title="">
     <Container>
       <Box
         borderRadius="lg"
@@ -111,7 +111,7 @@ const Home = () => {
         {content[locale].content}
           <br></br>
         </Paragraph>
-        <Box align="center" my={4}>
+        <Box textAlign="center" my={4}>
           <NextLink href="/works" passHref scroll={false}>
             <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
               My portfolio

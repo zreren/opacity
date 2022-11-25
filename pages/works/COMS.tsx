@@ -16,17 +16,18 @@ const Projects = () => (
   <Layout title="Canteen Management System">
     <Container>
       <Title>
-      Canteen Management System <Badge>2021-</Badge>
+        Canteen Management System <Badge>2021-</Badge>
       </Title>
       <P>
-      A webapp using LAMP stack, on which the canteen vendor can put up items and students can create account,
-order food in a hassle free manner.
+        A webapp using LAMP stack, on which the canteen vendor can put up items
+        and students can create account, order food in a hassle free manner.
       </P>
       <List ml={4} my={4}>
         <ListItem>
           <Meta>Github</Meta>
           <Link href="https://github.com/zreren">
-          Canteen-Order-Management-System<ExternalLinkIcon mx="2px" />
+            Canteen-Order-Management-System
+            <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
         <ListItem>

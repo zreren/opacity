@@ -5,7 +5,7 @@ import {
   List,
   ListItem,
   Heading,
-  Center,
+  Center
 } from '@chakra-ui/react'
 import Layout from '../../components/layouts/article'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
@@ -16,21 +16,24 @@ const Work = () => (
   <Layout title="Hand Gesture Recognition">
     <Container>
       <Title>
-      Hand Gesture Recognition <Badge>2021</Badge>
+        Hand Gesture Recognition <Badge>2021</Badge>
       </Title>
       <P>
-      Created a system to identify the hand gestures of the user at a restaurant and automated the food Ordering process.
+        Created a system to identify the hand gestures of the user at a
+        restaurant and automated the food Ordering process.
       </P>
       <br></br>
       <P>
-      Lead a team of four members,we created our own dataset and achieved an accuracy of 99% for recognition in real-time.
+        Lead a team of four members,we created our own dataset and achieved an
+        accuracy of 99% for recognition in real-time.
       </P>
 
       <List ml={4} my={4}>
-      <ListItem>
+        <ListItem>
           <Meta>Github</Meta>
           <Link href="https://github.com/zreren">
-          Hand-Gesture-Recognition<ExternalLinkIcon mx="2px" />
+            Hand-Gesture-Recognition
+            <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
         <ListItem>
@@ -39,9 +42,11 @@ const Work = () => (
         </ListItem>
         <ListItem>
           <Meta>Stack</Meta>
-          <span>Python, Keras, OpenCV, ML model using CNN and Raspberry pi for Automation</span>
+          <span>
+            Python, Keras, OpenCV, ML model using CNN and Raspberry pi for
+            Automation
+          </span>
         </ListItem>
-        
       </List>
 
       <Heading as="h4" fontSize={16} my={6}>

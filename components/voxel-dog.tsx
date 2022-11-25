@@ -1,18 +1,18 @@
 import { useState, useEffect, useRef, useCallback } from 'react'
-import * as THREE from 'three'
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
+import * as THREE from 'three';
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import { loadGLTFModel } from '../lib/model'
 import { DogSpinner, DogContainer } from './voxel-dog-loader'
 
 function easeOutCirc(x) {
   return Math.sqrt(1 - Math.pow(x - 1, 4))
 }
-let mixer;
-const clock = new THREE.Clock();
+let mixer
+const clock = new THREE.Clock()
 const VoxelDog = () => {
   const refContainer = useRef()
   const [loading, setLoading] = useState(true)
-  const [renderer, setRenderer] = useState()
+  const [renderer, setRenderer] = useState<any>()
   const [_camera, setCamera] = useState()
   const [target] = useState(new THREE.Vector3(-0.5, 1.2, 0))
   const [initialCameraPosition] = useState(
@@ -26,28 +26,26 @@ const VoxelDog = () => {
   const [_controls, setControls] = useState()
 
   const handleWindowResize = useCallback(() => {
-    const { current: container } = refContainer
+    const { current: container } :{current:any}= refContainer
     if (container && renderer) {
       const scW = container.clientWidth
       const scH = container.clientHeight
-
       renderer.setSize(scW, scH)
     }
   }, [renderer])
 
   /* eslint-disable react-hooks/exhaustive-deps */
   useEffect(() => {
-    const { current: container } = refContainer
+    const { current: container } :{current:any}= refContainer
     if (container && !renderer) {
       const scW = container.clientWidth
       const scH = container.clientHeight
-
       const renderer = new THREE.WebGLRenderer({
         antialias: true,
         alpha: true
       })
       renderer.setPixelRatio(window.devicePixelRatio)
-      renderer.setSize(scW , scH * 0.8)
+      renderer.setSize(scW, scH * 0.8)
       renderer.outputEncoding = THREE.sRGBEncoding
       container.appendChild(renderer.domElement)
       setRenderer(renderer)
@@ -78,14 +76,14 @@ const VoxelDog = () => {
       loadGLTFModel(scene, '/LittlestTokyo.gltf', {
         receiveShadow: false,
         castShadow: false
-      }).then((obj,gltfibj) => {
-        console.log(obj,'gltfObject')
-        mixer = new THREE.AnimationMixer( scene );
-				mixer.clipAction( obj.animations[ 0 ] ).play();
+      }).then((obj:any) => {
+        console.log(obj, 'gltfObject')
+        mixer = new THREE.AnimationMixer(scene)
+        mixer.clipAction(obj.animations[0]).play()
         animate()
-        scene.scale.set(0.01,0.01,0.01)
+        scene.scale.set(0.01, 0.01, 0.01)
         // mixer = new THREE.AnimationMixer( scene. );
-				// mixer.clipAction( scene.animations[ 0 ] ).play();
+        // mixer.clipAction( scene.animations[ 0 ] ).play();
         setLoading(false)
       })
 
@@ -93,9 +91,9 @@ const VoxelDog = () => {
       let frame = 0
       const animate = () => {
         req = requestAnimationFrame(animate)
-        const delta = clock.getDelta();
+        const delta = clock.getDelta()
 
-				mixer.update( delta );
+        mixer.update(delta)
         frame = frame <= 100 ? frame + 1 : frame
 
         if (frame <= 100) {

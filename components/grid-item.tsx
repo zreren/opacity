@@ -1,6 +1,6 @@
 import NextLink from 'next/link'
 import Image from 'next/image'
-import { Box, Text, LinkBox, LinkOverlay } from '@chakra-ui/react'
+import { Box, Text, LinkBox, LinkOverlay, Icon } from '@chakra-ui/react'
 import { Global } from '@emotion/react'
 
 export const GridItem = ({ children, href, title, thumbnail }) => (
@@ -20,21 +20,52 @@ export const GridItem = ({ children, href, title, thumbnail }) => (
     </LinkBox>
   </Box>
 )
-
-export const WorkGridItem = ({ children, id, title, thumbnail }) => (
+interface TWorkGridItem {
+  children: any
+  id: any
+  title: string
+  thumbnail: string
+  Icon?: any
+}
+export const WorkGridItem: any = ({
+  children,
+  id,
+  title,
+  thumbnail,
+  Icon,
+  path,
+  locale
+}) => (
   <Box w="100%" textAlign="center">
-    <NextLink href={`/works/${id}`} passHref scroll={false}>
+    <NextLink
+      href={{ pathname: `${path}`, query: { id: id } }}
+      passHref
+      locale={locale}
+      scroll={false}
+    >
       <LinkBox cursor="pointer">
         <Image
           src={thumbnail}
           alt={title}
           className="grid-item-thumbnail"
+          blurDataURL={thumbnail}
+          height={160}
+          width={300}
+          sizes="(min-width:200px) 100%,
+          height:160px
+          "
           placeholder="blur"
         />
-        <LinkOverlay href={`/works/${id}`}>
-          <Text mt={2} fontSize={20}>
-            {title}
-          </Text>
+        <LinkOverlay
+          mt={2}
+          gap={2}
+          display="flex"
+          alignItems="center"
+          justifyContent="center"
+          href={`/works/${id}`}
+        >
+          {Icon ? <Icon></Icon> : null}
+          <Text fontSize={20}>{title}</Text>
         </LinkOverlay>
         <Text fontSize={14}>{children}</Text>
       </LinkBox>

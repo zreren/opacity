@@ -21,19 +21,19 @@ const Work = () => (
         Adulting 101 <Badge>2021</Badge>
       </Title>
       <P>
-        Adulting 101 is a one stop solution for all finance problems. It is build using build using Python-based webframework Django, 
-        key features include add page, edit page, generate random page, ask form AI chat bot.
+        Adulting 101 is a one stop solution for all finance problems. It is
+        build using build using Python-based webframework Django, key features
+        include add page, edit page, generate random page, ask form AI chat bot.
       </P>
       <br></br>
-      Implemented a Markdown to HTML Converter that will automatically convert your markdown code to a HTML page whenever you add a new page.
-      <P>
-
-      </P>
+      Implemented a Markdown to HTML Converter that will automatically convert
+      your markdown code to a HTML page whenever you add a new page.
+      <P></P>
       <List ml={4} my={4}>
-      <ListItem>
+        <ListItem>
           <Meta>Github</Meta>
           <Link href="https://github.com/zreren">
-          Adulting 101 <ExternalLinkIcon mx="2px" />
+            Adulting 101 <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
         <ListItem>
@@ -42,14 +42,14 @@ const Work = () => (
         </ListItem>
         <ListItem>
           <Meta>Stack</Meta>
-          <span>Python, Django, HTML, CSS, JavaScript, Dialogflow, Tensorflow</span>
+          <span>
+            Python, Django, HTML, CSS, JavaScript, Dialogflow, Tensorflow
+          </span>
         </ListItem>
       </List>
-
       <Heading as="h4" fontSize={16} my={6}>
         <Center>Preview</Center>
       </Heading>
-
       <WorkImage src="/images/works/adulting101-home.png" alt="adulting101" />
       <WorkImage src="/images/works/adulting1.png" alt="adulting101" />
     </Container>

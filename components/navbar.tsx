@@ -19,7 +19,7 @@ import ThemeToggleButton from './theme-toggle-button'
 import { IoLogoGithub } from 'react-icons/io5'
 import { IoLanguage } from 'react-icons/io5'
 import { useRouter } from 'next/router'
-const LinkItem = ({ href, path, target, children,local, ...props }) => {
+const LinkItem: any = ({ href, path, target, children, local, ...props }) => {
   const active = path === href
   const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900')
   return (
@@ -39,8 +39,8 @@ const LinkItem = ({ href, path, target, children,local, ...props }) => {
 
 const Navbar = props => {
   const { path } = props
-  const router = useRouter();
-  const {locale} = router;
+  const router = useRouter()
+  const { locale } = router
   return (
     <Box
       position="fixed"
@@ -55,9 +55,8 @@ const Navbar = props => {
         display="flex"
         p={2}
         maxW="container.md"
-        wrap="wrap"
-        align="center"
-        justify="space-between"
+        textAlign="center"
+        justifyContent="space-between"
       >
         <Flex align="center" mr={5}>
           <Heading as="h1" size="lg" letterSpacing={'tighter'}>
@@ -93,17 +92,18 @@ const Navbar = props => {
           </LinkItem>
         </Stack>
 
-        <Box flex={1} align="right">
+        <Box flex={1} textAlign="right">
           <ThemeToggleButton />
           <IconButton
-          ml={2}
-          aria-label="Toggle theme"
-          colorScheme={useColorModeValue('gray', 'gray')}
-          icon={useColorModeValue(<IoLanguage />, <IoLanguage />)}
-          onClick={() => {
-            router.push("", "", { locale: locale==="cn"?"en":"cn" });
-          }}
-        ></IconButton>
+            ml={2}
+            aria-label="Toggle theme"
+            colorScheme={useColorModeValue('gray', 'gray')}
+            icon={useColorModeValue(<IoLanguage />, <IoLanguage />)}
+            onClick={() => {
+              console.log(router.asPath,'router.asPath')
+              router.push(router.asPath, router.asPath, { locale: locale === 'cn' ? 'en' : 'cn' })
+            }}
+          ></IconButton>
           <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
             <Menu isLazy id="navbar-menu">
               <MenuButton
@@ -122,10 +122,7 @@ const Navbar = props => {
                 <NextLink href="/blog" passHref>
                   <MenuItem as={Link}>Works</MenuItem>
                 </NextLink>
-                <MenuItem
-                  as={Link}
-                  href="https://github.com/zreren"
-                >
+                <MenuItem as={Link} href="https://github.com/zreren">
                   View Source
                 </MenuItem>
               </MenuList>

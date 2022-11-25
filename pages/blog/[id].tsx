@@ -35,11 +35,15 @@ export default function Article({ postData }) {
 }
 // dynamic route IDs
 export async function getStaticPaths({locales}) {
+  console.log(postsDir,'postsDir')
   const paths = (await getFileIds(postsDir)).map(id => 
-    locales.map((locale)=>({
-      params: { id },
-      locale
-    }))).flat()
+    {
+      console.log(id,'paths id')
+      locales.map((locale)=>({
+        params: { id },
+        locale
+    }))
+    }).flat();
   console.log(paths,"paths log")
   return {
     paths,

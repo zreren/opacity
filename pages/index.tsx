@@ -43,10 +43,10 @@ const content = {
       'Opacity，更习惯的是，你称呼我为Eren.在我12岁的时候因为游戏开始学习编程。目前正在研究的领域是是游戏3D，数字孪生vr开发。期望能够做有趣的事情。'
   },
   en: {
-    greeting: 'Hi there, I am Opacity focusing on SDE',
+    greeting: 'Hi there, I am Opacity focusing on SD',
     introduce: 'CS undergrad (Full Stack Developer)',
     content:
-      'Opacity,my prefix,which indicate that i want to adjust my presence. Also,you could call me Eren.I began programming since i was 12 years old.I especially like games and 3d development.Now i am focus on webgl and webvr.It is hoped that i could do something interesting && meaningful'
+      'Opacity,my prefix,which indicate that i want to adjust my presence. Also,you could call me Eren.I began programming since i was 12 years old.I especially like games and 3d development.Now i am focus on webgl and WebVr.It is hoped that i could do something interesting && meaningful'
   }
 }
 

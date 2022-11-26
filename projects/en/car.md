@@ -1,12 +1,10 @@
 ---
 title: Digital Twin Depot Scheduling
-description: 基于vue开发的数字孪生车间调度系统
+description: Digital twin workshop scheduling system developed based on vue
 date: 2022-03-20
 interface: /projects/card.png
 ---
 # 简介
 
-基于vue开发的数字孪生车间调度系统，文档待补充
+Digital twin workshop scheduling system developed based on vue
 ![interface](/projects/card.jpg)
-- 分析项目中Git的历史记录
-- 可视化动画

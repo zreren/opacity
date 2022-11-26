@@ -1,6 +1,6 @@
 ---
 title: An OOTB SSR resume system
-description: 用户端 + 管理端 + Next.js API.
+description: client page + admin page + Next.js API.
 date: 2021-09-01
 interface: /projects/resume-en.jpg
 ---

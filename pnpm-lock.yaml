@@ -9,6 +9,7 @@ specifiers:
   eslint-config-next: ^12.1.5
   framer-motion: ^6.3.0
   front-matter: ^4.0.2
+  highlight.js: ^11.7.0
   i18next: ^22.0.6
   next: ^12.1.5
   prettier: ^2.6.2
@@ -29,6 +30,7 @@ dependencies:
   '@emotion/styled': 11.10.5_ntk3xc32nev3giwk5xrmfa5exu
   framer-motion: 6.5.1_sfoxds7t5ydpegc3knd667wn6m
   front-matter: 4.0.2
+  highlight.js: 11.7.0
   i18next: 22.0.6
   next: 12.3.4_m5j7lwbckoquomtbl6yhnt55ua
   react: 17.0.2
@@ -3074,6 +3076,11 @@ packages:
 
   /hey-listen/1.0.8:
     resolution: {integrity: sha512-COpmrF2NOg4TBWUJ5UVyaCU2A88wEMkUPK4hNqyCkqHbxT92BbvfjoSozkAIIm6XhicGlJHhFdullInrdhwU8Q==}
+    dev: false
+
+  /highlight.js/11.7.0:
+    resolution: {integrity: sha512-1rRqesRFhMO/PRF+G86evnyJkCgaZFOI+Z6kdj15TA18funfoqJXvgPCLSf0SWq3SRfg1j3HlDs8o4s3EGq1oQ==}
+    engines: {node: '>=12.0.0'}
     dev: false
 
   /hoist-non-react-statics/3.3.2:

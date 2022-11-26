@@ -1,0 +1,142 @@
+{
+  "main": {
+    "id": "b17fc6711ad6bfc8",
+    "type": "split",
+    "children": [
+      {
+        "id": "4382afb9eb9180e1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c6a742644b5c7de2",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "95d27e3eb0ac24b3",
+    "type": "split",
+    "children": [
+      {
+        "id": "60e4e0e23704e396",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ea113fa1d70f76b3",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "167b7515ccc6a105",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "e278278b570f4df3",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "6bc181893a63cbb7",
+    "type": "split",
+    "children": [
+      {
+        "id": "a98f83c978e13f61",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "74a76fc58a21301f",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "034aa529d38a9f67",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "feaa6d9092dbbf30",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "8b70e183d055625d",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "ea113fa1d70f76b3",
+  "lastOpenFiles": [
+    "2022-11-26.md",
+    "en/car.md",
+    "en/gityeager.md",
+    "car.md",
+    "gityeager.md",
+    "test.md",
+    "projects/gityeager-cn.jpg.md",
+    "en/test.md"
+  ]
+}

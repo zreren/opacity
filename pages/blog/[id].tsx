@@ -14,11 +14,19 @@ import {
   Heading,
   Center
 } from '@chakra-ui/react';
+import {useEffect}from 'react';
 import { useRouter } from 'next/router';
+import 'highlight.js/styles/github.css' // github样式文件
+import hljs from 'highlight.js/lib/core' // highlight.js核心
+import javascript from 'highlight.js/lib/languages/javascript' // 单独使用js部分
 {/* <p class="time"><time datetime="${postData.dateYMD}">${postData.dateFriendly}</time></p> */}
 // post directory
 let postsDir = 'articles'
 export default function Article({ postData }) {
+  useEffect(() => {
+    hljs.registerLanguage('jsx', javascript)
+    hljs.highlightAll()
+  })
   // generate HTML from markdown content
   const html = `
     ${postData.html}

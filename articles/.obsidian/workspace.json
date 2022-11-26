@@ -1,0 +1,164 @@
+{
+  "main": {
+    "id": "330f6ac38e7019ec",
+    "type": "split",
+    "children": [
+      {
+        "id": "24a56daf741f2467",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "40422ce885f235ba",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "在Next.js中启用i18n实现国际化.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "101e2c02fb61cd8d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "cn/在Next.js中启用i18n实现国际化.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "25b20f6e7a8066b8",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "6f06ab97d219fdc1",
+    "type": "split",
+    "children": [
+      {
+        "id": "37c67477dde38e58",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3c92f5d3fb5474f4",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "b3832978d1b75afe",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "feb172c384b25ecb",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "3baaab878cae724b",
+    "type": "split",
+    "children": [
+      {
+        "id": "ab6cc9eec412e69c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "11a504b7ba2abb16",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "d6ca6e6d707e79c9",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "e45d426023293820",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "26f644cb95cdce02",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "25b20f6e7a8066b8",
+  "lastOpenFiles": [
+    "en/在Next.js中启用i18n实现国际化 1.md",
+    "cn/在Next.js中启用i18n实现国际化.md",
+    "在Next.js中启用i18n实现国际化.md",
+    "cn/gittool.md",
+    "en/gittool.md"
+  ]
+}

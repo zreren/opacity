@@ -19,6 +19,7 @@
     "@emotion/styled": "^11.8.1",
     "framer-motion": "^6.3.0",
     "front-matter": "^4.0.2",
+    "highlight.js": "^11.7.0",
     "i18next": "^22.0.6",
     "next": "^12.1.5",
     "react": "^17.0.2",

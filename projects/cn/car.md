@@ -7,5 +7,5 @@ interface: /projects/card.png
 # 简介
 
 基于vue开发的数字孪生车间调度系统，文档待补充
-![interface](/projects/card.jpg)
+![interface](/projects/card.png)
 

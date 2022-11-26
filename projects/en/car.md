@@ -7,4 +7,4 @@ interface: /projects/card.png
 # 简介
 
 Digital twin workshop scheduling system developed based on vue
-![interface](/projects/card.jpg)
+![interface](/projects/card.png)

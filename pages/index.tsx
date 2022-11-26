@@ -40,7 +40,7 @@ const content = {
     greeting: '您好，我是Opacity',
     introduce: '计算机专业大四在读 (全栈开发)',
     content:
-      'Opacity，更习惯的是，你称呼我为Eren.在我12岁的时候因为游戏开始学习编程。我喜欢的方向是游戏3D，vr开发。期望能够做有趣的事情。'
+      'Opacity，更习惯的是，你称呼我为Eren.在我12岁的时候因为游戏开始学习编程。目前正在研究的领域是是游戏3D，数字孪生vr开发。期望能够做有趣的事情。'
   },
   en: {
     greeting: 'Hi there, I am Opacity focusing on SDE',

@@ -1,6 +1,6 @@
 ---
-title: 数字孪生车厂调度
-description: 基于vue开发的数字孪生车间调度系统
+title: Digital Twin Depot Scheduling
+description: Digital twin workshop scheduling system developed based on vue
 date: 2022-03-20
 interface: /projects/card.png
 ---

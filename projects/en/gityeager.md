@@ -4,7 +4,7 @@ description: An analysis tool for Git
 date: 2022-10-10
 interface: /projects/gityeager-cn.jpg
 ---
-# 简介
+# Intro
 
 GitYeager-Tarui开发的Git工具
 ![interface](/projects/gityeager-cn.jpg)

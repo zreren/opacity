@@ -20,11 +20,14 @@ import 'highlight.js/styles/github.css' // github样式文件
 import hljs from 'highlight.js/lib/core' // highlight.js核心
 import javascript from 'highlight.js/lib/languages/javascript' // 单独使用js部分
 {/* <p class="time"><time datetime="${postData.dateYMD}">${postData.dateFriendly}</time></p> */}
+import json from 'highlight.js/lib/languages/json' // 单独使用js部分
+
 // post directory
 let postsDir = 'articles'
 export default function Article({ postData }) {
   useEffect(() => {
     hljs.registerLanguage('jsx', javascript)
+    // hljs.registerLanguage('json', json)
     hljs.highlightAll()
   })
   // generate HTML from markdown content

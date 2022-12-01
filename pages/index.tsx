@@ -76,7 +76,7 @@ const Home = ({postData}) => {
               Opacity Eren
             </Heading>
             <p>{content[locale].introduce}</p>
-            <p>Mainly use Next.js + TypeScript + Nest.js + Three.js</p>
+            <p>Mainly use React Next.js + TypeScript + Nest.js + Three.js</p>
           </Box>
           <Box
             flexShrink={0}

@@ -13,13 +13,15 @@ import {
   UnorderedList,
   Heading,
   Center
-} from '@chakra-ui/react';
-import {useEffect}from 'react';
-import { useRouter } from 'next/router';
+} from '@chakra-ui/react'
+import { useEffect } from 'react'
+import { useRouter } from 'next/router'
 import 'highlight.js/styles/github.css' // github样式文件
 import hljs from 'highlight.js/lib/core' // highlight.js核心
 import javascript from 'highlight.js/lib/languages/javascript' // 单独使用js部分
-{/* <p class="time"><time datetime="${postData.dateYMD}">${postData.dateFriendly}</time></p> */}
+{
+  /* <p class="time"><time datetime="${postData.dateYMD}">${postData.dateFriendly}</time></p> */
+}
 import json from 'highlight.js/lib/languages/json' // 单独使用js部分
 
 // post directory
@@ -37,35 +39,39 @@ export default function Article({ postData }) {
   return (
     <Layout title={postData.title}>
       <Container>
-        <Title>{postData.title} <Badge>{postData.dateYMD}</Badge></Title>
-        <Text as='sup'>{postData.wordcount}</Text>
-        <div dangerouslySetInnerHTML={{ __html: html }} />
+        <Title>
+          {postData.title} <Badge>{postData.dateYMD}</Badge>
+        </Title>
+        <Text as="sup">{postData.wordcount}</Text>
+        {/* <div dangerouslySetInnerHTML={{ __html: html }} /> */}
+        <article className="prose">{{ html }}</article>
       </Container>
     </Layout>
   )
 }
 // dynamic route IDs
-export async function getStaticPaths({locales}) {
-  console.log(postsDir,'postsDir')
-  const paths = (await getFileIds(postsDir)).map(id => 
-      locales.map((locale)=>({
+export async function getStaticPaths({ locales }) {
+  console.log(postsDir, 'postsDir')
+  const paths = (await getFileIds(postsDir))
+    .map(id =>
+      locales.map(locale => ({
         params: { id },
         locale
-    }))
-    ).flat();
-  console.log(paths,"paths log")
+      }))
+    )
+    .flat()
+  console.log(paths, 'paths log')
   return {
     paths,
     fallback: false
   }
 }
 // dynamic route content
-export async function getStaticProps({ params,locale  }) {
-  console.log(params,'params')
+export async function getStaticProps({ params, locale }) {
+  console.log(params, 'params')
   return {
     props: {
       postData: await getFileData(`${postsDir}/${locale}`, params.id)
-
     }
   }
 }

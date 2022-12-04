@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 .swiper-button-next, .swiper-rtl .swiper-button-prev{
     top: 60px !important;
     right: 0px;

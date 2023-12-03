@@ -25,6 +25,7 @@ const Layout = ({ children, title }) => {
             <title>{t}</title>
             <meta name="twitter:title" content={t} />
             <meta property="og:title" content={t} />
+            <script async src="https://us.umami.is/script.js" data-website-id="3a211f2c-c381-4a60-848a-6833a7932f35"></script>
           </Head>
         )}
         {children}

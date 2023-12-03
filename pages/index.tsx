@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import NextLink from 'next/link'
 import {
   Link,
@@ -9,7 +11,8 @@ import {
   List,
   ListItem,
   useColorModeValue,
-  chakra
+  chakra,
+  background
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
@@ -17,8 +20,8 @@ import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { useRouter } from 'next/router'
-import { GridItem } from '../components/grid-item';
-import { Navigation, Pagination, Scrollbar, Autoplay } from "swiper";
+import { GridItem } from '../components/grid-item'
+import { Navigation, Pagination, Scrollbar, Autoplay } from 'swiper'
 import {
   IoLogoTwitter,
   IoLogoInstagram,
@@ -30,23 +33,23 @@ import {
 import { SiGmail } from 'react-icons/si'
 import Image from 'next/image'
 import React from 'react'
-import { getAllFiles } from '../lib/posts-md';
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { getAllFiles } from '../lib/posts-md'
+import { Swiper, SwiperSlide } from 'swiper/react'
 import { WorkGridItem } from '../components/grid-item'
-import 'swiper/css';
-import "swiper/css/navigation";
+import 'swiper/css'
+import 'swiper/css/navigation'
 const content = {
   cn: {
-    greeting: '您好，我是Opacity',
-    introduce: '计算机专业大四在读 (全栈开发)',
+    greeting: '您好，我是Opacity，欢迎来到我的开放世界。',
+    introduce: '我只是相信，有一些重要的事情还未完成',
     content:
-      'Opacity，叫我欧欧就好，.在我12岁的时候因为游戏开始学习编程。目前正在研究的领域是是游戏3D，数字孪生vr开发。期望能够做有趣的事情。'
+      'Opacity，昵称欧欧。目前正在研究的领域是是 WebRTC 云渲染推流操控。也在做一些数据科学的工作。'
   },
   en: {
-    greeting: 'Hi there, I am Opacity focusing on SD',
-    introduce: 'CS undergrad (Full Stack Developer)',
+    greeting: "Hello, I'm Opacity. Welcome to my expansive realm.",
+    introduce: 'I simply believe that there are still important things left unfinished.',
     content:
-      'Opacity,my prefix,which indicate that i want to adjust my presence. Also,you could call me Eren.I began programming since i was 12 years old.I especially like games and 3d development.Now i am focus on webgl and WebVr.It is hoped that i could do something interesting && meaningful'
+      'Opacity, nicknamed OuO. Currently researching in the field of WebRTC cloud rendering. Also working on some data science projects.'
   }
 }
 
@@ -54,7 +57,7 @@ const ProfileImage = chakra(Image, {
   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
 })
 
-const Home = ({postData}) => {
+const Home = ({ postData }) => {
   const { locale, locales, defaultLocale, asPath } = useRouter()
   return (
     <Layout title="">
@@ -73,10 +76,13 @@ const Home = ({postData}) => {
         <Box display={{ md: 'flex' }}>
           <Box flexGrow={1}>
             <Heading as="h2" variant="page-title">
-              Opacity Eren
+              Opacity
             </Heading>
             <p>{content[locale].introduce}</p>
-            <p>Mainly use React Next.js + TypeScript + Nest.js + Three.js</p>
+            <p>
+              Mainly use Currently,focusing on WebRTC cloud rendering and data
+              science.
+            </p>
           </Box>
           <Box
             flexShrink={0}
@@ -135,7 +141,72 @@ const Home = ({postData}) => {
           </Box>
         </Section>
         <ProjectSwiper postData={postData}></ProjectSwiper>
-
+        {/* <Section delay={0.3}>
+          <Heading as="h3" variant="section-title">
+            Board
+          </Heading>
+          <List sx={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:10}}>
+            <ListItem
+              sx={{
+                height: 116,
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+                background: 'white',
+                borderRadius:10
+              }}
+            >
+              <Link href="https://github.com/zreren" target="_blank">
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={
+                    <Image
+                      width={25}
+                      height={20}
+                      src={
+                        'https://avatars.githubusercontent.com/u/96965865?s=200&v=4'
+                      }
+                    ></Image>
+                  }
+                >
+                  BinBat
+                </Button>
+              </Link>
+            </ListItem>
+            <ListItem
+              sx={{
+                height: 116,
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+                background: '#26292F',
+                borderRadius:10
+              }}
+            >
+              <Link href="https://github.com/zreren" target="_blank">
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  sx={{"&:hover": {
+                    "backdrop-filter":"blur(1.5rem)"
+                  }}}
+                  leftIcon={
+                    <Image
+                      width={25}
+                      height={20}
+                      src={
+                        'https://avatars.githubusercontent.com/u/96965865?s=200&v=4'
+                      }
+                    ></Image>
+                  }
+                >
+                  BinBat
+                </Button>
+              </Link>
+            </ListItem>
+          </List>
+        </Section> */}
         <Section delay={0.3}>
           <Heading as="h3" variant="section-title">
             On the web
@@ -186,9 +257,9 @@ const Home = ({postData}) => {
     </Layout>
   )
 }
-let _locale;
-let postsDir = 'projects';
-const ProjectSwiper = ({postData}) => {
+let _locale
+let postsDir = 'projects'
+const ProjectSwiper = ({ postData }) => {
   return (
     <Swiper
       modules={[Navigation, Autoplay]}
@@ -198,12 +269,12 @@ const ProjectSwiper = ({postData}) => {
       loop={false}
       autoplay={{
         delay: 3000,
-        disableOnInteraction: false,
+        disableOnInteraction: false
       }}
       onSlideChange={() => console.log('slide change')}
-      onSwiper={(swiper) => console.log(swiper)}
+      onSwiper={swiper => console.log(swiper)}
     >
-      {postData.map((item)=>{
+      {postData.map(item => {
         return (
           <SwiperSlide>
             <Section delay={0.1} key={item.id}>
@@ -221,13 +292,13 @@ const ProjectSwiper = ({postData}) => {
         )
       })}
     </Swiper>
-  );
+  )
 }
 export async function getStaticProps(context) {
   _locale = context.locale
   console.log(context, 'context')
   // const { locale, locales, defaultLocale, asPath } = useRouter();
-  postsDir = `projects/${ _locale}`
+  postsDir = `projects/${_locale}`
   return {
     props: {
       postData: await getAllFiles(postsDir)

@@ -36,7 +36,7 @@ export default function Article({ postData }) {
   `
   return (
     <Layout title={postData.title}>
-      <Container>
+      <Container  maxWidth={"3xl"}>
         <Title>{postData.title} <Badge>{postData.dateYMD}</Badge></Title>
         <Text as='sup'>{postData.wordcount}</Text>
         <div dangerouslySetInnerHTML={{ __html: html }} />

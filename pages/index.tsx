@@ -47,7 +47,8 @@ const content = {
   },
   en: {
     greeting: "Hello, I'm Opacity. Welcome to my expansive realm.",
-    introduce: 'I simply believe that there are still important things left unfinished.',
+    introduce:
+      'I simply believe that there are still important things left unfinished.',
     content:
       'Opacity, nicknamed OuO. Currently researching in the field of WebRTC cloud rendering. Also working on some data science projects.'
   }
@@ -141,19 +142,21 @@ const Home = ({ postData }) => {
           </Box>
         </Section>
         <ProjectSwiper postData={postData}></ProjectSwiper>
-        {/* <Section delay={0.3}>
+        <Section delay={0.3}>
           <Heading as="h3" variant="section-title">
-            Board
+            Links
           </Heading>
-          <List sx={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:10}}>
-            <ListItem
+          <List
+            sx={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12 }}
+          >
+            {/* <ListItem
               sx={{
                 height: 116,
                 display: 'flex',
                 justifyContent: 'center',
                 alignItems: 'center',
                 background: 'white',
-                borderRadius:10
+                borderRadius: 10
               }}
             >
               <Link href="https://github.com/zreren" target="_blank">
@@ -173,24 +176,27 @@ const Home = ({ postData }) => {
                   BinBat
                 </Button>
               </Link>
-            </ListItem>
+            </ListItem> */}
             <ListItem
               sx={{
                 height: 116,
                 display: 'flex',
+                flexDirection: 'column',
                 justifyContent: 'center',
                 alignItems: 'center',
                 background: '#26292F',
-                borderRadius:10
+                borderRadius: 10
               }}
             >
-              <Link href="https://github.com/zreren" target="_blank">
+              <Link href="https://github.com/binbat" target="_blank">
                 <Button
                   variant="ghost"
                   colorScheme="teal"
-                  sx={{"&:hover": {
-                    "backdrop-filter":"blur(1.5rem)"
-                  }}}
+                  sx={{
+                    '&:hover': {
+                      'backdrop-filter': 'blur(1.5rem)'
+                    }
+                  }}
                   leftIcon={
                     <Image
                       width={25}
@@ -204,9 +210,20 @@ const Home = ({ postData }) => {
                   BinBat
                 </Button>
               </Link>
+              <Paragraph
+                sx={{
+                  color:"#04A69C"
+                }}
+                style={{
+                  color:"#04A69C",
+                  textAlign:"center"
+                }}
+              >
+                To live is to change the world
+              </Paragraph>
             </ListItem>
           </List>
-        </Section> */}
+        </Section>
         <Section delay={0.3}>
           <Heading as="h3" variant="section-title">
             On the web

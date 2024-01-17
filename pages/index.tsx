@@ -36,8 +36,9 @@ import React from 'react'
 import { getAllFiles } from '../lib/posts-md'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { WorkGridItem } from '../components/grid-item'
-import 'swiper/css'
-import 'swiper/css/navigation'
+import 'swiper/css';
+import 'swiper/css/navigation';
+
 const content = {
   cn: {
     greeting: '您好，我是Opacity，欢迎来到我的开放世界。',
@@ -222,6 +223,53 @@ const Home = ({ postData }) => {
                 To live is to change the world
               </Paragraph>
             </ListItem>
+            <ListItem
+              sx={{
+                height: 116,
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'center',
+                alignItems: 'center',
+                background: '#FFF',
+                borderRadius: 10
+              }}
+            >
+              <Link href="https://kaiyi.cool/" target="_blank">
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  sx={{
+                    '&:hover': {
+                      'backdrop-filter': 'blur(1.5rem)'
+                    },
+                    color:"#63828e"
+                  }}
+                  leftIcon={
+                    <Image
+                      width={25}
+                      height={20}
+                      src={
+                        'https://kaiyi.cool/_astro/portrait.lBf0EGlL_1llb4H.webp'
+                      }
+                    ></Image>
+                  }
+                >
+                  Kai
+                </Button>
+              </Link>
+              <Paragraph
+                sx={{
+                  color:"#B2CCD6"
+                }}
+                style={{
+                  color:"#63828e",
+                  textAlign:"center"
+                }}
+              >
+                a passionate self-taught front-end developer
+              </Paragraph>
+            </ListItem>
+            
           </List>
         </Section>
         <Section delay={0.3}>

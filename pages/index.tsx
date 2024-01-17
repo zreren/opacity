@@ -152,7 +152,7 @@ const Home = ({ postData }) => {
           > */}
           <Swiper
             modules={[Navigation, Autoplay]}
-            spaceBetween={50}
+            spaceBetween={20}
             slidesPerView={2}
             navigation
             loop={false}
@@ -306,7 +306,6 @@ const Home = ({ postData }) => {
                 }}
               >
                TypeScript 全栈工程师
-
               </Paragraph>
             </Box>
             </SwiperSlide>

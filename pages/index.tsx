@@ -36,8 +36,8 @@ import React from 'react'
 import { getAllFiles } from '../lib/posts-md'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { WorkGridItem } from '../components/grid-item'
-import 'swiper/css';
-import 'swiper/css/navigation';
+import 'swiper/css'
+import 'swiper/css/navigation'
 
 const content = {
   cn: {
@@ -147,38 +147,27 @@ const Home = ({ postData }) => {
           <Heading as="h3" variant="section-title">
             Links
           </Heading>
-          <List
+          {/* <List
             sx={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12 }}
+          > */}
+          <Swiper
+            modules={[Navigation, Autoplay]}
+            spaceBetween={50}
+            slidesPerView={2}
+            navigation
+            loop={false}
+            // style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12 }}
+            autoplay={{
+              delay: 3000,
+              disableOnInteraction: false
+            }}
+            onSlideChange={() => console.log('slide change')}
+            onSwiper={swiper => console.log(swiper)}
           >
-            {/* <ListItem
-              sx={{
-                height: 116,
-                display: 'flex',
-                justifyContent: 'center',
-                alignItems: 'center',
-                background: 'white',
-                borderRadius: 10
-              }}
-            >
-              <Link href="https://github.com/zreren" target="_blank">
-                <Button
-                  variant="ghost"
-                  colorScheme="teal"
-                  leftIcon={
-                    <Image
-                      width={25}
-                      height={20}
-                      src={
-                        'https://avatars.githubusercontent.com/u/96965865?s=200&v=4'
-                      }
-                    ></Image>
-                  }
-                >
-                  BinBat
-                </Button>
-              </Link>
-            </ListItem> */}
-            <ListItem
+            <SwiperSlide> 
+            <Box
+              w="100%"
+              textAlign="center"
               sx={{
                 height: 116,
                 display: 'flex',
@@ -213,17 +202,19 @@ const Home = ({ postData }) => {
               </Link>
               <Paragraph
                 sx={{
-                  color:"#04A69C"
+                  color: '#04A69C'
                 }}
                 style={{
-                  color:"#04A69C",
-                  textAlign:"center"
+                  color: '#04A69C',
+                  textAlign: 'center'
                 }}
               >
                 To live is to change the world
               </Paragraph>
-            </ListItem>
-            <ListItem
+            </Box>
+            </SwiperSlide>
+            <SwiperSlide>
+            <Box
               sx={{
                 height: 116,
                 display: 'flex',
@@ -242,7 +233,7 @@ const Home = ({ postData }) => {
                     '&:hover': {
                       'backdrop-filter': 'blur(1.5rem)'
                     },
-                    color:"#63828e"
+                    color: '#63828e'
                   }}
                   leftIcon={
                     <Image
@@ -259,18 +250,97 @@ const Home = ({ postData }) => {
               </Link>
               <Paragraph
                 sx={{
-                  color:"#B2CCD6"
+                  color: '#B2CCD6'
                 }}
                 style={{
-                  color:"#63828e",
-                  textAlign:"center"
+                  color: '#63828e',
+                  textAlign: 'center'
                 }}
               >
                 a passionate self-taught front-end developer
               </Paragraph>
-            </ListItem>
-            
-          </List>
+            </Box>
+            </SwiperSlide>
+            <SwiperSlide>
+            <Box
+              sx={{
+                height: 116,
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'center',
+                alignItems: 'center',
+                background: '#303846',
+                borderRadius: 10
+              }}
+            >
+              <Link href="https://kuizuo.cn/" target="_blank">
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  sx={{
+                    '&:hover': {
+                      'backdrop-filter': 'blur(1.5rem)'
+                    },
+                    color: '#FFFFFF'
+                  }}
+                  leftIcon={
+                    <Image
+                      width={25}
+                      height={20}
+                      src={
+                        'https://kuizuo.cn/img/logo.webp'
+                      }
+                    ></Image>
+                  }
+                >
+                  愧怍
+                </Button>
+              </Link>
+              <Paragraph
+                sx={{
+                  color: '#FFFFFF'
+                }}
+                style={{
+                  color: '#FFFFFF',
+                  textAlign: 'center'
+                }}
+              >
+               TypeScript 全栈工程师
+
+              </Paragraph>
+            </Box>
+            </SwiperSlide>
+          </Swiper>
+          {/* <ListItem
+              sx={{
+                height: 116,
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+                background: 'white',
+                borderRadius: 10
+              }}
+            >
+              <Link href="https://github.com/zreren" target="_blank">
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={
+                    <Image
+                      width={25}
+                      height={20}
+                      src={
+                        'https://avatars.githubusercontent.com/u/96965865?s=200&v=4'
+                      }
+                    ></Image>
+                  }
+                >
+                  BinBat
+                </Button>
+              </Link>
+            </ListItem> */}
+
+          {/* </List> */}
         </Section>
         <Section delay={0.3}>
           <Heading as="h3" variant="section-title">

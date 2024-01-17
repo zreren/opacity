@@ -4,7 +4,8 @@ module.exports = {
   images: {
     domains: [
       "avatars.githubusercontent.com",
-      "kaiyi.cool"
+      "kaiyi.cool",
+      "kuizuo.cn"
     ],
   },
   // images: {

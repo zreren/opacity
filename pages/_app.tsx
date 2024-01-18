@@ -5,7 +5,7 @@ import { AnimatePresence } from 'framer-motion'
 import Chakra from '@/components/chakra'
 import '../styles/global.css'
 import { Router } from 'next/router';
-
+import Head from 'next/head'
 if (typeof window !== 'undefined') {
   window.history.scrollRestoration = 'manual'
 }
@@ -25,7 +25,7 @@ function Website({ Component, pageProps, router }) {
   }
   Router.events.on('routeChangeComplete', (url) => {
     try{
-      window._hmt.push(['_trackPageview', url]);
+      window?._hmt.push(['_trackPageview', url]);
     }catch (e){}
   })
   return (

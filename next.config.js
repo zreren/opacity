@@ -5,7 +5,8 @@ module.exports = {
     domains: [
       "avatars.githubusercontent.com",
       "kaiyi.cool",
-      "kuizuo.cn"
+      "kuizuo.cn",
+      "simonme.netlify.app"
     ],
   },
   // images: {

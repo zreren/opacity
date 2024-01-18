@@ -121,7 +121,7 @@ const Home = ({ postData }) => {
             {content[locale].content}
             <br></br>
           </Paragraph>
-          <Box textAlign="center" my={4} mx={2}>
+          {/* <Box textAlign="center" my={4} mx={2}>
             <NextLink href="/works" passHref scroll={false}>
               <Button
                 leftIcon={<IoNewspaperOutline></IoNewspaperOutline>}
@@ -131,16 +131,7 @@ const Home = ({ postData }) => {
                 My Project
               </Button>
             </NextLink>
-            {/* <NextLink href="/works" passHref scroll={false}>
-              <Button
-                leftIcon={<IoNewspaperOutline></IoNewspaperOutline>}
-                rightIcon={<ChevronRightIcon />}
-                colorScheme={useColorModeValue('orange', 'orange')}
-              >
-                My Project
-              </Button>
-            </NextLink> */}
-          </Box>
+          </Box> */}
         </Section>
         <ProjectSwiper postData={postData}></ProjectSwiper>
         <Section delay={0.3}>
@@ -161,153 +152,195 @@ const Home = ({ postData }) => {
               delay: 3000,
               disableOnInteraction: false
             }}
-            onSlideChange={() => console.log('slide change')}
-            onSwiper={swiper => console.log(swiper)}
           >
-            <SwiperSlide> 
-            <Box
-              w="100%"
-              textAlign="center"
-              sx={{
-                height: 116,
-                display: 'flex',
-                flexDirection: 'column',
-                justifyContent: 'center',
-                alignItems: 'center',
-                background: '#26292F',
-                borderRadius: 10
-              }}
-            >
-              <Link href="https://github.com/binbat" target="_blank">
-                <Button
-                  variant="ghost"
-                  colorScheme="teal"
-                  sx={{
-                    '&:hover': {
-                      'backdrop-filter': 'blur(1.5rem)'
+            <SwiperSlide>
+              <Box
+                w="100%"
+                textAlign="center"
+                sx={{
+                  height: 116,
+                  display: 'flex',
+                  flexDirection: 'column',
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                  background: '#26292F',
+                  borderRadius: 10
+                }}
+              >
+                <Link href="https://github.com/binbat" target="_blank">
+                  <Button
+                    variant="ghost"
+                    colorScheme="teal"
+                    sx={{
+                      '&:hover': {
+                        'backdrop-filter': 'blur(1.5rem)'
+                      }
+                    }}
+                    leftIcon={
+                      <Image
+                        width={25}
+                        height={20}
+                        src={
+                          'https://avatars.githubusercontent.com/u/96965865?s=200&v=4'
+                        }
+                      ></Image>
                     }
+                  >
+                    BinBat
+                  </Button>
+                </Link>
+                <Paragraph
+                  sx={{
+                    color: '#04A69C'
                   }}
-                  leftIcon={
-                    <Image
-                      width={25}
-                      height={20}
-                      src={
-                        'https://avatars.githubusercontent.com/u/96965865?s=200&v=4'
-                      }
-                    ></Image>
-                  }
+                  style={{
+                    color: '#04A69C',
+                    textAlign: 'center'
+                  }}
                 >
-                  BinBat
-                </Button>
-              </Link>
-              <Paragraph
-                sx={{
-                  color: '#04A69C'
-                }}
-                style={{
-                  color: '#04A69C',
-                  textAlign: 'center'
-                }}
-              >
-                To live is to change the world
-              </Paragraph>
-            </Box>
+                  To live is to change the world
+                </Paragraph>
+              </Box>
             </SwiperSlide>
             <SwiperSlide>
-            <Box
-              sx={{
-                height: 116,
-                display: 'flex',
-                flexDirection: 'column',
-                justifyContent: 'center',
-                alignItems: 'center',
-                background: '#FFF',
-                borderRadius: 10
-              }}
-            >
-              <Link href="https://kaiyi.cool/" target="_blank">
-                <Button
-                  variant="ghost"
-                  colorScheme="teal"
-                  sx={{
-                    '&:hover': {
-                      'backdrop-filter': 'blur(1.5rem)'
-                    },
-                    color: '#63828e'
-                  }}
-                  leftIcon={
-                    <Image
-                      width={25}
-                      height={20}
-                      src={
-                        'https://kaiyi.cool/_astro/portrait.lBf0EGlL_1llb4H.webp'
-                      }
-                    ></Image>
-                  }
-                >
-                  Kai
-                </Button>
-              </Link>
-              <Paragraph
+              <Box
                 sx={{
-                  color: '#B2CCD6'
-                }}
-                style={{
-                  color: '#63828e',
-                  textAlign: 'center'
+                  height: 116,
+                  display: 'flex',
+                  flexDirection: 'column',
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                  background: '#FFF',
+                  borderRadius: 10
                 }}
               >
-                a passionate self-taught front-end developer
-              </Paragraph>
-            </Box>
+                <Link href="https://kaiyi.cool/" target="_blank">
+                  <Button
+                    variant="ghost"
+                    colorScheme="teal"
+                    sx={{
+                      '&:hover': {
+                        'backdrop-filter': 'blur(1.5rem)'
+                      },
+                      color: '#63828e'
+                    }}
+                    leftIcon={
+                      <Image
+                        width={25}
+                        height={20}
+                        src={
+                          'https://kaiyi.cool/_astro/portrait.lBf0EGlL_1llb4H.webp'
+                        }
+                      ></Image>
+                    }
+                  >
+                    Kai
+                  </Button>
+                </Link>
+                <Paragraph
+                  sx={{
+                    color: '#B2CCD6'
+                  }}
+                  style={{
+                    color: '#63828e',
+                    textAlign: 'center'
+                  }}
+                >
+                  a passionate self-taught front-end developer
+                </Paragraph>
+              </Box>
             </SwiperSlide>
             <SwiperSlide>
-            <Box
-              sx={{
-                height: 116,
-                display: 'flex',
-                flexDirection: 'column',
-                justifyContent: 'center',
-                alignItems: 'center',
-                background: '#303846',
-                borderRadius: 10
-              }}
-            >
-              <Link href="https://kuizuo.cn/" target="_blank">
-                <Button
-                  variant="ghost"
-                  colorScheme="teal"
+              <Box
+                sx={{
+                  height: 116,
+                  display: 'flex',
+                  flexDirection: 'column',
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                  background: '#303846',
+                  borderRadius: 10
+                }}
+              >
+                <Link href="https://kuizuo.cn/" target="_blank">
+                  <Button
+                    variant="ghost"
+                    colorScheme="teal"
+                    sx={{
+                      '&:hover': {
+                        'backdrop-filter': 'blur(1.5rem)'
+                      },
+                      color: '#FFFFFF'
+                    }}
+                    leftIcon={
+                      <Image
+                        width={25}
+                        height={25}
+                        src={'https://kuizuo.cn/img/logo.webp'}
+                      ></Image>
+                    }
+                  >
+                    愧怍
+                  </Button>
+                </Link>
+                <Paragraph
                   sx={{
-                    '&:hover': {
-                      'backdrop-filter': 'blur(1.5rem)'
-                    },
                     color: '#FFFFFF'
                   }}
-                  leftIcon={
-                    <Image
-                      width={25}
-                      height={20}
-                      src={
-                        'https://kuizuo.cn/img/logo.webp'
-                      }
-                    ></Image>
-                  }
+                  style={{
+                    color: '#FFFFFF',
+                    textAlign: 'center'
+                  }}
                 >
-                  愧怍
-                </Button>
-              </Link>
-              <Paragraph
+                  TypeScript 全栈工程师
+                </Paragraph>
+              </Box>
+            </SwiperSlide>
+            <SwiperSlide>
+              <Box
                 sx={{
-                  color: '#FFFFFF'
-                }}
-                style={{
-                  color: '#FFFFFF',
-                  textAlign: 'center'
+                  height: 116,
+                  display: 'flex',
+                  flexDirection: 'column',
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                  background: '#303846',
+                  borderRadius: 10
                 }}
               >
-               TypeScript 全栈工程师
-              </Paragraph>
-            </Box>
+                <Link href="https://simonme.netlify.app/" target="_blank">
+                  <Button
+                    variant="ghost"
+                    colorScheme="teal"
+                    sx={{
+                      '&:hover': {
+                        'backdrop-filter': 'blur(1.5rem)'
+                      },
+                      color: '#FFFFFF'
+                    }}
+                    leftIcon={
+                      <Image
+                        width={20}
+                        height={20}
+                        src={'https://simonme.netlify.app/black.png'}
+                      ></Image>
+                    }
+                  >
+                    Simon He
+                  </Button>
+                </Link>
+                <Paragraph
+                  sx={{
+                    color: '#FFFFFF'
+                  }}
+                  style={{
+                    color: '#FFFFFF',
+                    textAlign: 'center'
+                  }}
+                >
+                 front-end programmer
+                </Paragraph>
+              </Box>
             </SwiperSlide>
           </Swiper>
           {/* <ListItem
@@ -405,8 +438,6 @@ const ProjectSwiper = ({ postData }) => {
         delay: 3000,
         disableOnInteraction: false
       }}
-      onSlideChange={() => console.log('slide change')}
-      onSwiper={swiper => console.log(swiper)}
     >
       {postData.map(item => {
         return (

@@ -350,7 +350,7 @@ const Home = ({ postData }) => {
                   flexDirection: 'column',
                   justifyContent: 'center',
                   alignItems: 'center',
-                  background: '#B4E3F8',
+                  background: '#0F172A',
                   borderRadius: 10
                 }}
               >
@@ -362,7 +362,7 @@ const Home = ({ postData }) => {
                       '&:hover': {
                         'backdrop-filter': 'blur(1.5rem)'
                       },
-                      color: '#63828e'
+                      color: '#C8CBD0'
                     }}
                     leftIcon={
                       <Image
@@ -377,10 +377,10 @@ const Home = ({ postData }) => {
                 </Link>
                 <Paragraph
                   sx={{
-                    color: '#63828e'
+                    color: '#C8CBD0'
                   }}
                   style={{
-                    color: '#63828e',
+                    color: '#C8CBD0',
                     textAlign: 'center'
                   }}
                 >

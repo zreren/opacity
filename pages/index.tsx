@@ -292,7 +292,7 @@ const Home = ({ postData }) => {
                     textAlign: 'center'
                   }}
                 >
-                  TypeScript 全栈工程师
+                  道阻且长，行则将至
                 </Paragraph>
               </Box>
             </SwiperSlide>
@@ -350,7 +350,7 @@ const Home = ({ postData }) => {
                   flexDirection: 'column',
                   justifyContent: 'center',
                   alignItems: 'center',
-                  background: '#303846',
+                  background: '#B4E3F8',
                   borderRadius: 10
                 }}
               >
@@ -362,7 +362,7 @@ const Home = ({ postData }) => {
                       '&:hover': {
                         'backdrop-filter': 'blur(1.5rem)'
                       },
-                      color: '#FFFFFF'
+                      color: '#63828e'
                     }}
                     leftIcon={
                       <Image
@@ -377,10 +377,10 @@ const Home = ({ postData }) => {
                 </Link>
                 <Paragraph
                   sx={{
-                    color: '#FFFFFF'
+                    color: '#63828e'
                   }}
                   style={{
-                    color: '#FFFFFF',
+                    color: '#63828e',
                     textAlign: 'center'
                   }}
                 >

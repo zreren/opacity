@@ -25,7 +25,8 @@ function Website({ Component, pageProps, router }) {
   }
   Router.events.on('routeChangeComplete', (url) => {
     try{
-      window?._hmt.push(['_trackPageview', url]);
+      // @ts-ignore
+      window?._hmt?.push(['_trackPageview', url]);
     }catch (e){}
   })
   return (

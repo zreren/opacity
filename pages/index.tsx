@@ -342,6 +342,52 @@ const Home = ({ postData }) => {
                 </Paragraph>
               </Box>
             </SwiperSlide>
+            <SwiperSlide>
+              <Box
+                sx={{
+                  height: 116,
+                  display: 'flex',
+                  flexDirection: 'column',
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                  background: '#303846',
+                  borderRadius: 10
+                }}
+              >
+                <Link href="https://www.oboard.eu.org/" target="_blank">
+                  <Button
+                    variant="ghost"
+                    colorScheme="teal"
+                    sx={{
+                      '&:hover': {
+                        'backdrop-filter': 'blur(1.5rem)'
+                      },
+                      color: '#FFFFFF'
+                    }}
+                    leftIcon={
+                      <Image
+                        width={20}
+                        height={20}
+                        src={'https://www.oboard.eu.org/_next/image?url=https%3A%2F%2Fupload.jianshu.io%2Fusers%2Fupload_avatars%2F8761709%2F3101d25e-1917-47dd-bdee-58bbda3352ac.png%3FimageMogr2%2Fauto-orient%2Fstrip%7CimageView2%2F1%2Fw%2F300%2Fh%2F300%2Fformat%2Fwebp&w=640&q=75'}
+                      ></Image>
+                    }
+                  >
+                    oboard
+                  </Button>
+                </Link>
+                <Paragraph
+                  sx={{
+                    color: '#FFFFFF'
+                  }}
+                  style={{
+                    color: '#FFFFFF',
+                    textAlign: 'center'
+                  }}
+                >
+                 一块小板子
+                </Paragraph>
+              </Box>
+            </SwiperSlide>
           </Swiper>
           {/* <ListItem
               sx={{

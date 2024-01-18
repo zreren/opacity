@@ -6,7 +6,8 @@ module.exports = {
       "avatars.githubusercontent.com",
       "kaiyi.cool",
       "kuizuo.cn",
-      "simonme.netlify.app"
+      "simonme.netlify.app",
+      "www.oboard.eu.org"
     ],
   },
   // images: {

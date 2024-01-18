@@ -17,7 +17,7 @@ function Website({ Component, pageProps, router }) {
       var _hmt = _hmt || [];
       (function() {
         var hm = document.createElement("script");
-        hm.src = "https://hm.baidu.com/hm.js?你的代码";
+        hm.src = "https://hm.baidu.com/hm.js?b25a342ef0de14660b78e522284ec270";
         var s = document.getElementsByTagName("script")[0];
         s.parentNode.insertBefore(hm, s);
       })();`,

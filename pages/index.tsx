@@ -38,6 +38,7 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import { WorkGridItem } from '../components/grid-item'
 import 'swiper/css'
 import 'swiper/css/navigation'
+import { client } from '@/sanity/lib/client'
 
 const content = {
   cn: {
@@ -59,8 +60,9 @@ const ProfileImage = chakra(Image, {
   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
 })
 
-const Home = ({ postData }) => {
+const Home = ({ postData,links }) => {
   const { locale, locales, defaultLocale, asPath } = useRouter()
+  console.log(links,"home links")
   return (
     <Layout title="">
       <Container>
@@ -153,7 +155,59 @@ const Home = ({ postData }) => {
               disableOnInteraction: false
             }}
           >
-            <SwiperSlide>
+            {links?.map(item => {
+              return <SwiperSlide>
+                <Box
+                  w="100%"
+                  textAlign="center"
+                  sx={{
+                    height: 116,
+                    display: 'flex',
+                    flexDirection: 'column',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    background:  item.background,
+                    borderRadius: 10
+                  }}
+                >
+                  <Link href={item.href} target="_blank">
+                    <Button
+                      variant="ghost"
+                      colorScheme="teal"
+                      sx={{
+                        color: item.fontColor,
+                        '&:hover': {
+                          'backdrop-filter': 'blur(1.5rem)'
+                        }
+                      }}
+                      leftIcon={
+                        <Image
+                          width={25}
+                          height={20}
+                          src={
+                            item.avatar
+                          }
+                        ></Image>
+                      }
+                    >
+                      {item.title}
+                    </Button>
+                  </Link>
+                  <Paragraph
+                    sx={{
+                      color: item.fontColor
+                    }}
+                    style={{
+                      color: item.fontColor,
+                      textAlign: 'center'
+                    }}
+                  >
+                    {item.description}
+                  </Paragraph>
+                </Box>
+              </SwiperSlide>
+            })}
+            {/* <SwiperSlide>
               <Box
                 w="100%"
                 textAlign="center"
@@ -387,7 +441,7 @@ const Home = ({ postData }) => {
                  一块小板子
                 </Paragraph>
               </Box>
-            </SwiperSlide>
+            </SwiperSlide> */}
           </Swiper>
           {/* <ListItem
               sx={{
@@ -506,13 +560,16 @@ const ProjectSwiper = ({ postData }) => {
   )
 }
 export async function getStaticProps(context) {
+  const links = await client.fetch(`*[_type == "links"]`)
+  console.log(links, 'links')
   _locale = context.locale
   console.log(context, 'context')
   // const { locale, locales, defaultLocale, asPath } = useRouter();
   postsDir = `projects/${_locale}`
   return {
     props: {
-      postData: await getAllFiles(postsDir)
+      postData: await getAllFiles(postsDir),
+      links
     }
   }
 }

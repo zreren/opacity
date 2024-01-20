@@ -1,4 +1,7 @@
-module.exports = {
+ 
+
+module.exports =  ({
+ 
   reactStrictMode: false,
   swcMinify: true,
   images: {
@@ -34,4 +37,4 @@ module.exports = {
      */
     defaultLocale: 'en'
   }
-}
+})

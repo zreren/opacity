@@ -19,3 +19,68 @@
   .swiper-button-next, .swiper-rtl .swiper-button-prev{
     right: -0px;
   }
+  
+
+
+
+  .md-post-p {
+    margin: 12px 0px 12px 0px;
+      font-size: 1.1em;
+      z-index: 1 !important;
+
+  }
+
+  .md-post-li {
+    margin: 12px;
+      list-style-type: none;
+  }
+
+  .md-post-h4 {
+    margin: 12px;
+      font-size: 1.5em;
+      color: red;
+  }
+
+  .md-post-hr {
+    margin: 12px;
+      width: 200px;
+      height: 20px;
+      margin: 60px auto;
+      background: radial-gradient(circle closest-side, #d4d4d4 98%, #0000) 0/calc(100%/5) 100%;
+      border: none;
+  }
+
+  .md-post-p a{
+    color: #FBD38D !important;
+        z-index: 1;
+
+  }
+
+  .content-container{
+    position: relative;
+    z-index: 1;
+    margin-bottom: 60px;
+  }
+  .content-container::after{
+      content:'';
+      position: absolute;
+      top:0;
+      left:-50%;
+      width: 200%;
+      height: 100%;
+      pointer-events: none;
+      background-image: linear-gradient(
+        0deg,
+        #000,
+        transparent 1px),  
+        linear-gradient(
+          90deg,
+          #000,
+          transparent 1px
+        );  
+        background-size: 12px 12px; 
+        opacity: 0.2;
+
+        
+    }
+  

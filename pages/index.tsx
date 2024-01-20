@@ -65,7 +65,9 @@ const Home = ({ postData,links }) => {
   console.log(links,"home links")
   return (
     <Layout title="">
-      <Container>
+      <Container
+      maxWidth={'1xl'} 
+      >
         <Box
           borderRadius="lg"
           mb={6}

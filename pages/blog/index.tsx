@@ -28,7 +28,7 @@ export default function index({ postData }) {
   const { locale, locales, defaultLocale, asPath } = useRouter()
   return (
     <Layout title="Works">
-      <Container>
+      <Container maxWidth="3xl">
         <Heading as="h3" fontSize={20} mb={4}>
           Blog
         </Heading>

@@ -54,7 +54,7 @@ const Navbar = props => {
       <Container
         display="flex"
         p={2}
-        maxW="container.md"
+        maxWidth={'4xl'} 
         textAlign="center"
         justifyContent="space-between"
       >
@@ -72,12 +72,12 @@ const Navbar = props => {
           flexGrow={1}
           mt={{ base: 4, md: 0 }}
         >
-          {/* <LinkItem href="/works" path={path}>
+       {/* <LinkItem href="/works" path={path}>
             Projects
-          </LinkItem>
+          </LinkItem> */}
           <LinkItem href="/blog" path={path}>
             Blog
-          </LinkItem> */}
+          </LinkItem>  
           <LinkItem
             target="_blank"
             href="https://github.com/zreren"

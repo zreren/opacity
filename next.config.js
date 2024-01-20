@@ -7,7 +7,8 @@ module.exports = {
       "kaiyi.cool",
       "kuizuo.cn",
       "simonme.netlify.app",
-      "www.oboard.eu.org"
+      "www.oboard.eu.org",
+      "images.unsplash.com"
     ],
   },
   // images: {

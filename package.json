@@ -27,7 +27,6 @@
     "highlight.js": "^11.7.0",
     "i18next": "^22.0.6",
     "next": "^12.1.5",
-    "next-remove-imports": "^1.0.12",
     "next-sanity": "^7.0.10",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",

@@ -63,7 +63,6 @@ export default function Article({ postData }) {
               const match = /language-(\w+)/.exec(className || '')
               return !inline && match ? (
                 <SyntaxHighlighter
-                  style={a11yDark}
                   language={match[1]}
                   PreTag="div"
                   {...props}

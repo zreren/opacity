@@ -45,6 +45,9 @@ export default function Article({ postData }) {
   const Hr = () => <hr className="md-post-hr" />
   return (
     <Layout title={postData.title}>
+      <Head>
+      <meta name="twitter:title" content= {postData.title}>
+      </Head>
       <Container maxWidth={'4xl'} className='content-container'>
         <Title>
           {postData.title} <Badge>{postData.dateYMD}</Badge>

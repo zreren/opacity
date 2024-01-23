@@ -54,7 +54,7 @@ const Navbar = props => {
       <Container
         display="flex"
         p={2}
-        maxWidth={'4xl'} 
+        maxWidth={'4xl'}
         textAlign="center"
         justifyContent="space-between"
       >
@@ -72,12 +72,12 @@ const Navbar = props => {
           flexGrow={1}
           mt={{ base: 4, md: 0 }}
         >
-       {/* <LinkItem href="/works" path={path}>
+          {/* <LinkItem href="/works" path={path}>
             Projects
           </LinkItem> */}
           <LinkItem href="/blog" path={path}>
             Blog
-          </LinkItem>  
+          </LinkItem>
           <LinkItem
             target="_blank"
             href="https://github.com/zreren"
@@ -100,8 +100,10 @@ const Navbar = props => {
             colorScheme={useColorModeValue('gray', 'gray')}
             icon={useColorModeValue(<IoLanguage />, <IoLanguage />)}
             onClick={() => {
-              console.log(router.asPath,'router.asPath')
-              router.push(router.asPath, router.asPath, { locale: locale === 'cn' ? 'en' : 'cn' })
+              console.log(router.asPath, 'router.asPath')
+              router.push(router.asPath, router.asPath, {
+                locale: locale === 'cn' ? 'en' : 'cn'
+              })
             }}
           ></IconButton>
           <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
@@ -119,9 +121,9 @@ const Navbar = props => {
                 {/* <NextLink href="/works" passHref>
                   <MenuItem as={Link}>Projects</MenuItem>
                 </NextLink>
-                <NextLink href="/blog" passHref>
-                  <MenuItem as={Link}>Blog</MenuItem>
-                </NextLink> */}
+                // <NextLink href="/blog" passHref>
+                //   <MenuItem as={Link}>Blog</MenuItem>
+                // </NextLink> */}
                 <MenuItem as={Link} href="https://github.com/zreren">
                   View Source
                 </MenuItem>

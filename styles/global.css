@@ -36,7 +36,7 @@
   font-size: 16px;
 
   /*  字体颜色  */
-  color: #ffffffeb;
+  /* color:  #ffffffeb; */
 
   /* 行距 */
   line-height: 1.75;
@@ -72,6 +72,7 @@
   position: relative;
   z-index: 1;
   margin-bottom: 60px;
+  overflow: hidden;
 }
 .content-container::after {
   content: '';

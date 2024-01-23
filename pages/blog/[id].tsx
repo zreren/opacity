@@ -47,11 +47,13 @@ export default function Article({ postData }) {
   const Hr = () => <hr className="md-post-hr" />
   return (
     <Layout title={postData.title}>
-
-      <Container maxWidth={'4xl'} className='content-container'>
-      <Head>
-      <meta name="twitter:title" content= {postData.title} />
-      </Head>
+      <Container maxWidth={'4xl'} className="content-container">
+        <Head>
+          <meta name="twitter:title" content={postData.title} />
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:description" content={postData.description} />
+          <meta name="twitter:image" content={postData.interface} />
+        </Head>
         <Title>
           {postData.title} <Badge>{postData.dateYMD}</Badge>
         </Title>
@@ -65,14 +67,10 @@ export default function Article({ postData }) {
             li: Li,
             h4: H4,
             hr: Hr,
-            code({ node, inline, className, children, ...props }:any) {
+            code({ node, inline, className, children, ...props }: any) {
               const match = /language-(\w+)/.exec(className || '')
               return !inline && match ? (
-                <SyntaxHighlighter
-                  language={match[1]}
-                  PreTag="div"
-                  {...props}
-                >
+                <SyntaxHighlighter language={match[1]} PreTag="div" {...props}>
                   {String(children).replace(/\n$/, '')}
                 </SyntaxHighlighter>
               ) : (

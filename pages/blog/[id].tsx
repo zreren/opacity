@@ -19,6 +19,8 @@ import { useRouter } from 'next/router'
 import 'highlight.js/styles/github.css' // github样式文件
 import hljs from 'highlight.js/lib/core' // highlight.js核心
 import javascript from 'highlight.js/lib/languages/javascript' // 单独使用js部分
+// import Head from 'next/head'
+
 {
   /* <p class="time"><time datetime="${postData.dateYMD}">${postData.dateFriendly}</time></p> */
 }
@@ -45,10 +47,11 @@ export default function Article({ postData }) {
   const Hr = () => <hr className="md-post-hr" />
   return (
     <Layout title={postData.title}>
-      <Head>
-      <meta name="twitter:title" content= {postData.title}>
-      </Head>
+
       <Container maxWidth={'4xl'} className='content-container'>
+      <Head>
+      <meta name="twitter:title" content= {postData.title} />
+      </Head>
         <Title>
           {postData.title} <Badge>{postData.dateYMD}</Badge>
         </Title>

@@ -30,9 +30,10 @@ const Main = ({ children, router }) => {
 
       <Container maxWidth={'4xl'} pt={14}>
         {router.asPath === '/' && <LazyVoxelDog />}
-
+        <div style={{ paddingTop: '10px' }}>
+          {/* {children} */}
+        </div>
         {children}
-
         <Footer />
       </Container>
     </Box>

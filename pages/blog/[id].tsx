@@ -44,7 +44,11 @@ export default function Article({ postData }) {
   const P = ({ children }) => <p className="md-post-p">{children}</p>
   const Li = ({ children }) => <li className="md-post-li">{children}</li>
   const H4 = ({ children }) => <h4 className="md-post-h4">{children}</h4>
+  const H3 = ({ children }) => <h3 className="md-post-h3">{children}</h3>
+  const H2 = ({ children }) => <h2 className="md-post-h2">{children}</h2>
+  const H1 = ({ children }) => <h1 className="md-post-h1">{children}</h1>
   const Hr = () => <hr className="md-post-hr" />
+  const Blockquote = ({ children }) => <blockquote className="md-post-blockquote">{children}</blockquote>
   return (
     <Layout title={postData.title}>
       <Container maxWidth={'4xl'} className="content-container">
@@ -61,16 +65,25 @@ export default function Article({ postData }) {
         {/* <MarkdownPreview source={postData.md}></MarkdownPreview> */}
         {/* <div dangerouslySetInnerHTML={{ __html: html }} /> */}
         <Markdown
-          remarkPlugins={[remarkGfm]} // Allows us to have embedded HTML tags in our markdown
+          remarkPlugins={[remarkGfm]}
           components={{
             p: P,
             li: Li,
+            h1: H1,
+            h2: H2,
+            h3: H3,
             h4: H4,
             hr: Hr,
+            blockquote: Blockquote,
             code({ node, inline, className, children, ...props }: any) {
               const match = /language-(\w+)/.exec(className || '')
               return !inline && match ? (
-                <SyntaxHighlighter language={match[1]} PreTag="div" {...props}>
+                <SyntaxHighlighter
+                  language={match[1]}
+                  PreTag="div"
+                  className="md-post-codeblock"
+                  {...props}
+                >
                   {String(children).replace(/\n$/, '')}
                 </SyntaxHighlighter>
               ) : (

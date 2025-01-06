@@ -38,7 +38,7 @@
     "remark": "^14.0.2",
     "remark-gfm": "^4.0.0",
     "remark-html": "^15.0.1",
-    "sanity": "2.25.0",
+    "sanity": "3.25.0",
     "sass": "^1.70.0",
     "styled-components": "^6.1.8",
     "swiper": "^8.4.5",

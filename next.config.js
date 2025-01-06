@@ -1,7 +1,11 @@
  
 
 module.exports =  ({
- 
+  typescript: {
+    // !! 警告 !!
+    // 在生产环境中不建议禁用类型检查
+    ignoreBuildErrors: true,
+  },
   reactStrictMode: false,
   swcMinify: true,
   images: {

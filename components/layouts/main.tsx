@@ -22,14 +22,14 @@ const Main = ({ children, router }) => {
         <link rel="apple-touch-icon" href="apple-touch-icon.png" />
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
         <title>opacity - Homepage</title>
- 
+
 
       </Head>
       <Analytics></Analytics>
       <NavBar path={router.asPath} />
 
-      <Container maxWidth={'4xl'}  pt={14}>
-        <LazyVoxelDog />
+      <Container maxWidth={'4xl'} pt={14}>
+        {router.asPath === '/' && <LazyVoxelDog />}
 
         {children}
 

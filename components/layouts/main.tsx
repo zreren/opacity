@@ -23,7 +23,8 @@ const Main = ({ children, router }) => {
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
         <title>opacity - Homepage</title>
         <script defer data-domain="opacity.ink" src="http://plausible-8ba5b7-154-204-56-213.traefik.me/js/script.js"></script>
-
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4088998404774424"
+          crossorigin="anonymous"></script>
 
       </Head>
       <Analytics></Analytics>

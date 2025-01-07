@@ -61,26 +61,68 @@ export const WorkGridItem: any = ({
           <Box
             height="160px"
             width="100%"
-            bg="gray.50"  // 更浅的背景色
+            bg="white"
             borderRadius="12px"
             display="flex"
-            alignItems="center"
-            justifyContent="center"
-            transition="all 0.2s"  // 添加过渡效果
-            _hover={{  // 添加悬停效果
-              bg: 'gray.100',
-              transform: 'translateY(-2px)',
-              boxShadow: 'lg'
+            flexDirection="column"
+            padding="4"
+            position="relative"
+            overflow="hidden"
+            boxShadow="sm"
+            transition="all 0.3s ease"
+            _before={{
+              content: '""',
+              position: "absolute",
+              top: 0,
+              left: 0,
+              right: 0,
+              height: "4px",
+              background: "linear-gradient(90deg, #4299E1, #805AD5)"
+            }}
+            _hover={{
+              transform: 'translateY(-4px)',
+              boxShadow: 'xl',
+              bg: 'gray.50'
             }}
           >
             <Text
-              fontSize="24px"
+              fontSize="sm"
+              color="gray.500"
+              mb="2"
+            >
+              ARTICLE
+            </Text>
+            <Text
+              fontSize="xl"
               fontWeight="bold"
-              color="gray.700"  // 更深的文字颜色
-              letterSpacing="wide"  // 增加字间距
+              color="gray.800"
+              lineHeight="tight"
+              noOfLines={2}
             >
               {title}
             </Text>
+            <Box
+              position="absolute"
+              bottom="4"
+              left="4"
+              right="4"
+              display="flex"
+              alignItems="center"
+              gap="2"
+            >
+              <Box
+                w="2"
+                h="2"
+                borderRadius="full"
+                bg="green.400"
+              />
+              <Text
+                fontSize="xs"
+                color="gray.600"
+              >
+                点击阅读
+              </Text>
+            </Box>
           </Box>
         )}
         <LinkOverlay

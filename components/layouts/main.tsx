@@ -22,6 +22,7 @@ const Main = ({ children, router }) => {
         <link rel="apple-touch-icon" href="apple-touch-icon.png" />
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
         <title>opacity - Homepage</title>
+        <script defer data-domain="opacity.ink" src="http://plausible-8ba5b7-154-204-56-213.traefik.me/js/script.js"></script>
 
 
       </Head>

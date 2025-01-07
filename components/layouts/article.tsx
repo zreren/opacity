@@ -26,7 +26,6 @@ const Layout = ({ children, title }) => {
             <meta name="twitter:title" content={t} />
             <meta property="og:title" content={t} />
             <script async src="https://us.umami.is/script.js" data-website-id="3a211f2c-c381-4a60-848a-6833a7932f35"></script>
-            <script defer data-domain="opacity.ink" src="http://plausible-8ba5b7-154-204-56-213.traefik.me/js/script.js"></script>
           </Head>
         )}
         {children}

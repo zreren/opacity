@@ -61,13 +61,24 @@ export const WorkGridItem: any = ({
           <Box
             height="160px"
             width="100%"
-            bg="gray.100"
+            bg="gray.50"  // 更浅的背景色
             borderRadius="12px"
             display="flex"
             alignItems="center"
             justifyContent="center"
+            transition="all 0.2s"  // 添加过渡效果
+            _hover={{  // 添加悬停效果
+              bg: 'gray.100',
+              transform: 'translateY(-2px)',
+              boxShadow: 'lg'
+            }}
           >
-            <Text fontSize="24px" fontWeight="bold" color="gray.600">
+            <Text
+              fontSize="24px"
+              fontWeight="bold"
+              color="gray.700"  // 更深的文字颜色
+              letterSpacing="wide"  // 增加字间距
+            >
               {title}
             </Text>
           </Box>

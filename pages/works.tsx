@@ -14,34 +14,34 @@ export async function getStaticProps(context) {
   _locale = context.locale
   console.log(context, 'context')
   // const { locale, locales, defaultLocale, asPath } = useRouter();
-  postsDir = `projects/${ _locale}`
+  postsDir = `projects/${_locale}`
   return {
     props: {
       postData: await getAllFiles(postsDir)
     }
   }
 }
-const Works = ({postData}) => (
+const Works = ({ postData }) => (
   <Layout title="Works">
     <Container>
       <Heading as="h3" fontSize={20} mb={4}>
         Projects
       </Heading>
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
-          {postData.map(post => (
-            <Section delay={0.1} key={post.id}>
-              <WorkGridItem
-                path={`/projects/[id]`}
-                id={post.id}
-                locale={_locale}
-                title={post.title}
-                thumbnail={post.interface}
-              >
-                {post.description}
-              </WorkGridItem>
-            </Section>
-          ))}
-          {/* <Section delay={0.1}>
+        {postData.map(post => (
+          <Section delay={0.1} key={post.id}>
+            <WorkGridItem
+              path={`/projects/[id]`}
+              id={post.id}
+              locale={_locale}
+              title={post.title}
+              thumbnail={post?.interface}
+            >
+              {post.description}
+            </WorkGridItem>
+          </Section>
+        ))}
+        {/* <Section delay={0.1}>
             <WorkGridItem
               id="fakeface"
               title="Fake Face Classifier"
@@ -61,7 +61,7 @@ const Works = ({postData}) => (
               generted using Generative Adversarial Networks (GANs).
             </WorkGridItem>
           </Section> */}
-        </SimpleGrid>
+      </SimpleGrid>
     </Container>
   </Layout>
 )

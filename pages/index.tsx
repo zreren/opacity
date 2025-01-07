@@ -60,13 +60,13 @@ const ProfileImage = chakra(Image, {
   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
 })
 
-const Home = ({ postData,links }) => {
+const Home = ({ postData, links }) => {
   const { locale, locales, defaultLocale, asPath } = useRouter()
-  console.log(links,"home links")
+  console.log(links, "home links")
   return (
     <Layout title="">
       <Container
-      maxWidth={'1xl'} 
+        maxWidth={'1xl'}
       >
         <Box
           borderRadius="lg"
@@ -168,7 +168,7 @@ const Home = ({ postData,links }) => {
                     flexDirection: 'column',
                     justifyContent: 'center',
                     alignItems: 'center',
-                    background:  item.background,
+                    background: item.background,
                     borderRadius: 10
                   }}
                 >
@@ -550,7 +550,7 @@ const ProjectSwiper = ({ postData }) => {
                 id={item.id}
                 locale={_locale}
                 title={item.title}
-                thumbnail={item.interface}
+                thumbnail={item?.interface}
               >
                 {item.description}
               </WorkGridItem>

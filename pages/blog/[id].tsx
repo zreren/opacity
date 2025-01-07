@@ -56,7 +56,7 @@ export default function Article({ postData }) {
           <meta name="twitter:title" content={postData.title} />
           <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:description" content={postData.description} />
-          <meta name="twitter:image" content={postData.interface} />
+          <meta name="twitter:image" content={postData?.interface} />
         </Head>
         <Title>
           {postData.title} <Badge>{postData.dateYMD}</Badge>

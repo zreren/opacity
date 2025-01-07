@@ -2,7 +2,7 @@
 title: IOS微信双开教程，完全免费
 description: 通过 AltStore 自签名多开微信，苹果，IOS双开
 date: 2025-01-06
-interface: /i18n.png
+# interface: /i18n.png
 ---
 
 本文介绍了如何通过 **AltStore** 自签名实现 iOS 微信双开，整个过程其实不算太复杂，只是需要一些耐心和操作。下面就来简单聊聊怎么做。

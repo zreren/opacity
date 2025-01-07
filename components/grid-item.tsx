@@ -61,14 +61,14 @@ export const WorkGridItem: any = ({
           <Box
             height="160px"
             width="100%"
-            bg="gray.800" // 改为深色背景
+            bg="#1a1b1e" // 深蓝黑色背景
             borderRadius="12px"
             display="flex"
             flexDirection="column"
             padding="4"
             position="relative"
             overflow="hidden"
-            boxShadow="dark-lg" // 更深的阴影效果
+            boxShadow="0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)"
             transition="all 0.3s ease"
             _before={{
               content: '""',
@@ -76,28 +76,30 @@ export const WorkGridItem: any = ({
               top: 0,
               left: 0,
               right: 0,
-              height: "4px",
-              background: "linear-gradient(90deg, #4299E1, #805AD5)"
+              bottom: 0,
+              background: "linear-gradient(130deg, rgba(66, 153, 225, 0.08) 0%, rgba(128, 90, 213, 0.08) 100%)",
+              zIndex: 0
             }}
             _hover={{
               transform: 'translateY(-4px)',
-              boxShadow: '2xl',
-              bg: 'gray.700' // hover时稍微变亮
+              boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)',
             }}
           >
             <Text
               fontSize="sm"
-              color="gray.400" // 更浅的灰色
+              color="gray.400"
               mb="2"
+              zIndex={1}
             >
               ARTICLE
             </Text>
             <Text
               fontSize="xl"
               fontWeight="bold"
-              color="gray.100" // 更浅的文字颜色
+              color="white"
               lineHeight="tight"
               noOfLines={2}
+              zIndex={1}
             >
               {title}
             </Text>
@@ -109,16 +111,17 @@ export const WorkGridItem: any = ({
               display="flex"
               alignItems="center"
               gap="2"
+              zIndex={1}
             >
               <Box
                 w="2"
                 h="2"
                 borderRadius="full"
-                bg="green.400"
+                bg="#4ade80" // 更鲜艳的绿色
               />
               <Text
                 fontSize="xs"
-                color="gray.400" // 更浅的文字颜色
+                color="gray.400"
               >
                 点击阅读
               </Text>

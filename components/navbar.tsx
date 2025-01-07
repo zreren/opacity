@@ -90,6 +90,15 @@ const Navbar = props => {
             <IoLogoGithub />
             Source
           </LinkItem>
+          <LinkItem href="/privacy-policy" path={path}>
+            Privacy Policy
+          </LinkItem>
+          <LinkItem href="/terms" path={path}>
+            Terms
+          </LinkItem>
+          <LinkItem href="/contact" path={path}>
+            Contact
+          </LinkItem>
         </Stack>
 
         <Box flex={1} textAlign="right">

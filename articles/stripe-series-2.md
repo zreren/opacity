@@ -1,4 +1,4 @@
- ---
+---
 title: Stripe系列(二)：在 Astro 中优雅地接入 Stripe 支付
 description: 从实战角度详细介绍如何在 Astro 项目中集成 Stripe 支付功能
 date: 2024-03-21

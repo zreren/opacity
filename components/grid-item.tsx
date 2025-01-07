@@ -61,14 +61,14 @@ export const WorkGridItem: any = ({
           <Box
             height="160px"
             width="100%"
-            bg="white"
+            bg="gray.800" // 改为深色背景
             borderRadius="12px"
             display="flex"
             flexDirection="column"
             padding="4"
             position="relative"
             overflow="hidden"
-            boxShadow="sm"
+            boxShadow="dark-lg" // 更深的阴影效果
             transition="all 0.3s ease"
             _before={{
               content: '""',
@@ -81,13 +81,13 @@ export const WorkGridItem: any = ({
             }}
             _hover={{
               transform: 'translateY(-4px)',
-              boxShadow: 'xl',
-              bg: 'gray.50'
+              boxShadow: '2xl',
+              bg: 'gray.700' // hover时稍微变亮
             }}
           >
             <Text
               fontSize="sm"
-              color="gray.500"
+              color="gray.400" // 更浅的灰色
               mb="2"
             >
               ARTICLE
@@ -95,7 +95,7 @@ export const WorkGridItem: any = ({
             <Text
               fontSize="xl"
               fontWeight="bold"
-              color="gray.800"
+              color="gray.100" // 更浅的文字颜色
               lineHeight="tight"
               noOfLines={2}
             >
@@ -118,7 +118,7 @@ export const WorkGridItem: any = ({
               />
               <Text
                 fontSize="xs"
-                color="gray.600"
+                color="gray.400" // 更浅的文字颜色
               >
                 点击阅读
               </Text>

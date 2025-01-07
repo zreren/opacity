@@ -44,18 +44,34 @@ export const WorkGridItem: any = ({
       scroll={false}
     >
       <LinkBox cursor="pointer">
-        <Image
-          src={thumbnail}
-          alt={title}
-          className="grid-item-thumbnail"
-          blurDataURL={thumbnail}
-          height={160}
-          width={300}
-          sizes="(min-width:200px) 100%,
-          height:160px
-          "
-          placeholder="blur"
-        />
+        {thumbnail ? (
+          <Image
+            src={thumbnail}
+            alt={title}
+            className="grid-item-thumbnail"
+            blurDataURL={thumbnail}
+            height={160}
+            width={300}
+            sizes="(min-width:200px) 100%,
+            height:160px
+            "
+            placeholder="blur"
+          />
+        ) : (
+          <Box
+            height="160px"
+            width="100%"
+            bg="gray.100"
+            borderRadius="12px"
+            display="flex"
+            alignItems="center"
+            justifyContent="center"
+          >
+            <Text fontSize="24px" fontWeight="bold" color="gray.600">
+              {title}
+            </Text>
+          </Box>
+        )}
         <LinkOverlay
           mt={2}
           gap={2}

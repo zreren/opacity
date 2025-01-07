@@ -15,7 +15,7 @@ interface: /i18n.png
 
 安装完成后，AltServer 并不会显示应用图标，但你可以在电脑右上角的状态栏看到它。
 
-!https://pic2.zhimg.com/v2-3fdadcd1ce3325fff802f61ae6b8ae15_r.jpg
+![image](https://pic2.zhimg.com/v2-3fdadcd1ce3325fff802f61ae6b8ae15_r.jpg)
 
 ### 2. **在 iPhone 上设置 AltStore**
 
@@ -60,7 +60,7 @@ ipatool download -b com.tencent.xi
 
 打开 AltStore，选择刚刚修改过的 IPA 文件进行安装。安装时，可能会提示去除扩展程序，去除后会更简便。
 
-!https://pic1.zhimg.com/v2-6e55256ff0254c4422e7901704d412f4_r.jpg
+![image](https://pic1.zhimg.com/v2-6e55256ff0254c4422e7901704d412f4_r.jpg)
 
 安装完成后，你会在桌面看到新的微信图标。
 
@@ -75,7 +75,7 @@ ipatool download -b com.tencent.xi
 
 你可以在 AltStore 设置中开启 **Background Refresh**，不过如果希望更精确的控制，建议使用快捷指令进行定时刷新。
 
-!https://pic2.zhimg.com/v2-fbe770e4f5a1e26e700c94cfe6388901_r.jpg
+![image](https://pic2.zhimg.com/v2-fbe770e4f5a1e26e700c94cfe6388901_r.jpg)
 
 ---
 

@@ -16,7 +16,7 @@ export async function getStaticProps(context) {
   _locale = context.locale
   console.log(context, 'context')
   // const { locale, locales, defaultLocale, asPath } = useRouter();
-  postsDir = `articles/${ _locale}`
+  postsDir = `articles/${_locale}`
   return {
     props: {
       postData: await getAllFiles(postsDir)
@@ -50,7 +50,7 @@ export default function index({ postData }) {
                 id={post.id}
                 locale={_locale}
                 title={post.title}
-                thumbnail={post.interface}
+                thumbnail={post?.interface}
               >
                 {post.description}
               </WorkGridItem>

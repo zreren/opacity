@@ -2,7 +2,6 @@
 title: Stripe系列(一)：从零开始申请Stripe支付账户，一次性通过审核
 description: 分享个人申请Stripe支付账户的实战经验和注意事项
 date: 2024-03-20
-interface: /images/articles/stripe-series-1.png
 ---
 
 作为一名独立开发者，我在开发第一个 SaaS 产品时就遇到了支付集成的问题。经过对比 PayPal、Stripe 等主流支付平台后，最终选择了 Stripe。这篇文章我将分享我的申请经验，希望能帮助你少走一些弯路。

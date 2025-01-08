@@ -2,7 +2,6 @@
 title: Supabase 开发实战技巧总结
 description: 介绍 Supabase 开发中的最佳实践和实用技巧
 date: 2024-03-20
-interface: /images/articles/supabase-tips.png
 ---
 
 Supabase 作为一个开源的 Firebase 替代品，提供了数据库、认证、实时订阅等强大功能。本文将分享一些实用的开发技巧和最佳实践。

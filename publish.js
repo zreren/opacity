@@ -66,7 +66,7 @@ async function generateTitleImage(title, outputPath) {
     });
 
     // 添加副标题
-    const subtitle = "opacity.io";  // 可以通过参数传入
+    const subtitle = "opacity.ink";  // 可以通过参数传入
     ctx.font = '40px "Microsoft YaHei"';  // 副标题使用较小字号
     ctx.strokeStyle = 'rgba(255, 255, 255, 0.2)';  // 更淡的描边
     ctx.lineWidth = 1;

@@ -19,8 +19,8 @@ interface: /images/articles/hkcard.png
     - **汇丰银行（HSBC）**：汇丰是全球领先的银行之一，这个没什么好说的，使用体验非常好的银行。普通人选择汇丰one即可。汇丰银行现在在香港西九龙站
     开了一家分行，估计是专门为了给内地旅客开户准备的，而且周六日也营业，再也不需要专门请假过去办理了，也就是说你只要从内地乘坐高铁到西九龙站下车，就可以直接到汇丰分行办理银行卡。
 
-    需要提前预约：https://www.eticketing.hsbc.com.hk/Booking/Index/SC
-    
+    需要提前在官网上预约：https://www.eticketing.hsbc.com.hk/Booking/Index/SC
+
 - **虚拟银行（建议必开）**
     - **ZA Bank**：ZA Bank 是香港首批虚拟银行之一，提供便捷的线上银行服务。
         

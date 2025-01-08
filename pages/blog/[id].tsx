@@ -58,7 +58,7 @@ export default function Article({ postData }) {
           <meta name="twitter:description" content={postData.description} />
           <meta
             name="twitter:image"
-            content={`https://www.opacity.ink/${postData?.interface}?v=${new Date().getTime()}`}
+            content={`https://www.opacity.ink/${postData?.interface}?v=${Math.random()}`}
           />
         </Head>
         <Title>

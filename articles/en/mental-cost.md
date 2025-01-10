@@ -1,32 +1,27 @@
 ---
-title: AI对我们做事情最大的帮助-降低心智成本
-description: 探讨心智启动成本的概念以及人工智能如何帮助我们提高工作效率
-date: 2025-01-08
-interface: /images/articles/mental-cost.png
+title: How to Reduce Mental Startup Costs to Better Achieve Your Goals
+description: Understanding and reducing mental startup costs to set and achieve realistic goals
+date: 2025-01-07
 ---
 
-AI其实当前对我们最大的帮助，是降低了我们做一件事情的。心智启动成本。光是这一点，AI就已经功德圆满。
+Yesterday we discussed the concept of mental startup costs. Today, let's explore how to effectively reduce these costs to better achieve our goals.
 
-过往我想写一些工具的时候，以前一想到配置环境，查库的文档，调试，最终到最后成果，一想到这个长长的链条，很难让人有行动力。
+As we enter 2025 and begin setting our New Year's resolutions, there's an important question to consider before setting your goals:
 
-但是有了AI的辅助，比如我要写一个自动化脚本，我只需要让AI出个草稿，草稿当然可能有各种各样的问题，但是有了草稿之后，就会不知不觉地把这个事情做完了
+Have you fully understood all the steps involved in achieving this goal? Is it simply a matter of increasing effort, or is it something you haven't really explored yet?
 
-其实这就是心智启动负担的体现。心智启动成本是做事情拖延的最大原因。
+For instance, some people easily set ambitious goals like reading 100 books in a year, despite rarely reading in their daily lives. Such goals are unlikely to be achieved. For goals we're already familiar with, we can directly set quantifiable targets and action plans, reducing uncertainty. If you're already a regular reader who completes one book per month, you might challenge yourself to read two books monthly, focusing on finding more efficient reading methods.
 
-我们每天都面临着各种各样的任务，从简单的日常琐事到复杂的工作项目。然而，我们常常会发现，即使是看似简单的任务，启动起来也并非易事。这背后隐藏着一个重要的概念——心智启动成本。
+For unfamiliar goals, we need to break down tasks, gradually explore each component, and act in phases. Start with reading one book per month, or a few chapters per week, slowly building a reading habit. Don't try to accomplish everything at once – the enormous mental startup burden will completely drain your motivation to act.
 
-心智启动成本指的是我们在开始一项任务之前所需付出的精神和认知努力。它包括以下几个方面：
+Here are some key strategies to reduce mental startup costs:
 
-目标设定与规划： 明确任务的目标、制定执行计划、分解任务步骤等。
-情境切换： 从一个任务切换到另一个任务时，需要调整思维模式、重新集中注意力。
-信息检索与准备： 收集必要的资料、工具和资源。
-克服拖延： 克服开始任务的心理阻力，例如畏难情绪、完美主义等。
+1. **Start Small**: Break down large goals into smaller, manageable tasks
+2. **Build on Existing Habits**: Leverage what you're already doing well
+3. **Gradual Progress**: Allow yourself time to learn and adapt
+4. **Realistic Planning**: Set goals based on your current capabilities, not idealistic scenarios
 
-心智启动成本的高低受到多种因素的影响，例如任务的复杂程度、个人的专注力水平、环境干扰等。高心智启动成本会导致拖延症、效率低下、甚至产生焦虑和压力。
-
-大部分人工作完一天到了家之后，精力已经全部耗尽，要再调度大脑去启动这项任务，无疑是非常困难的。
-
-我目前也在研究如何更好的降低心智启动成本。AI辅助只是一个方面，如果你想提高效率，你应该多思考，如何从各种方面降低自己做事的心智负担，比如积攒一系列的模板，制定一些列的SOP都有助于你的产出。
+Remember, sustainable progress comes from understanding and working with your mental startup costs, not fighting against them.
 
 
 

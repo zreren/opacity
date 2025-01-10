@@ -1,15 +1,30 @@
 ---
 title: IOS微信双开教程，完全免费
 description: 通过 AltStore 自签名多开微信，苹果，IOS双开
-date: 2025-01-06
-# interface: /i18n.png
+date: 2025-01-010
+interface: /images/articles/wechat.png
 ---
 
-本文介绍了如何通过 **AltStore** 自签名实现 iOS 微信双开，整个过程其实不算太复杂，只是需要一些耐心和操作。下面就来简单聊聊怎么做。
+本文介绍了如何通过 **AltStore** 自己签名微信，完全免费，实现 iOS 微信双开。AltStore是欧盟要求的允许用户从外部商店下载软件的一个商店。
+整个过程其实不算太复杂，只是需要一些耐心和操作。下面就来简单聊聊怎么做。
 
-### 1. **在 macOS 上安装 AltStore**
+一共需要三步
 
-**AltStore** 让你可以通过自己的 Apple ID，把一些非 App Store 上的应用（.ipa 文件）安装到 iOS 设备上，基本上就是自己签名。
+1. 在电脑上下载 altserver 软件
+2. 通过电脑的 altserver 在你的手机上安装 altstore应用商店（欧盟官方第三方商店）
+3. 下载微信ipa文件到手机
+4. 打开手机的altstore安装ipa
+
+首先你需要一台电脑，在上面安装 AltServer
+
+### 1. **下载AltServer**
+
+
+**AltServer** 让你可以通过自己的 Apple ID，把一些非 App Store 上的应用（.ipa 文件）安装到 iOS 设备上，基本上就是自己签名。
+
+如果你是windows电脑，请下载: https://pan.quark.cn/s/a05d22e58f29
+如果你是macos电脑，请下载：https://pan.quark.cn/s/5e026ce549fa
+
 
 先下载并安装 **AltServer**（适用于 macOS 或 Windows），然后把 iPhone 用 USB 连接到电脑，接着用 AltServer 安装 AltStore。
 
@@ -21,7 +36,7 @@ date: 2025-01-06
 
 安装好 AltStore 后，手机上会出现 AltStore 图标，但因为安全限制，第一次打开时需要信任开发者证书。
 
-在 **设置 > 通用 > 设备管理** 中信任开发者。
+在手机上 **设置 > 通用 > 设备管理** 中信任开发者。
 
 另外还需要启用 **开发者模式**，路径是：**设置 > 隐私与安全性 > 开发者模式**。
 
@@ -33,12 +48,7 @@ date: 2025-01-06
 
 如果不想麻烦，直接下载现成的微信 IPA 包是最快的选择，它基本上已经去除了不必要的文件。
 
-当然，也可以通过命令行工具 **IPATool** 来下载，前提是你已经安装了 Homebrew。通过这个工具，你可以直接下载微信的 IPA 文件，命令行如下：
-
-```bash
-ipatool download -b com.tencent.xi
-
-```
+这里分享一下我自用的 IPA 包 https://pan.quark.cn/s/affde76e8503
 
 ### 4. **修改 IPA 文件（可选）**
 
@@ -85,3 +95,14 @@ ipatool download -b com.tencent.xi
 - **缺点**：操作稍微复杂、签名有效期为 7 天、更新时需要电脑。
 
 通过这种方式，你可以免费实现微信双开的功能。虽然需要定期更新，但比起其他收费的方案，这种方法的性价比还是挺高的。如果你觉得操作复杂，可以一步一步来，慢慢掌握。
+
+如果你在双开过程中遇到任何问题，欢迎加我微信和添加群聊
+
+
+!()[https://pub-661b0ffd786d45edbf52a76c125d28a7.r2.dev/6021736521154_.pic.jpg]
+
+!()[https://pub-661b0ffd786d45edbf52a76c125d28a7.r2.dev/6041736521269_.pic.jpg]
+
+
+> 请注意，双开和插件有一定风险，新注册的账号谨慎使用，新号的封控比较严格，另外，使用插件也是有风险的。不过第一次会有警告，如果出现警告之后就不要再使用了
+> 本人实践半年的号一个月，未出现封号警告

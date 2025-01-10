@@ -146,3 +146,14 @@
   border: none;
   border-top: 2px solid #eaeaea;
 }
+.md-post-ul {
+  list-style-type: disc;
+  padding-left: 2em;
+  margin: 1em 0;
+}
+
+.md-post-ol {
+  list-style-type: decimal;
+  padding-left: 2em;
+  margin: 1em 0;
+}

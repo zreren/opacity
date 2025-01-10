@@ -43,6 +43,8 @@ export default function Article({ postData }) {
   `
   const P = ({ children }) => <p className="md-post-p">{children}</p>
   const Li = ({ children }) => <li className="md-post-li">{children}</li>
+  const Ul = ({ children }) => <ul className="md-post-ul">{children}</ul>
+  const Ol = ({ children }) => <ol className="md-post-ol">{children}</ol>
   const H4 = ({ children }) => <h4 className="md-post-h4">{children}</h4>
   const H3 = ({ children }) => <h3 className="md-post-h3">{children}</h3>
   const H2 = ({ children }) => <h2 className="md-post-h2">{children}</h2>
@@ -72,6 +74,8 @@ export default function Article({ postData }) {
           components={{
             p: P,
             li: Li,
+            ul: Ul,
+            ol: Ol,
             h1: H1,
             h2: H2,
             h3: H3,

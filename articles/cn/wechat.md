@@ -1,7 +1,7 @@
 ---
 title: IOS微信双开教程，完全免费
 description: 通过 AltStore 自签名多开微信，苹果，IOS双开
-date: 2025-01-010
+date: 2025-01-10
 interface: /images/articles/wechat.png
 ---
 
@@ -10,21 +10,20 @@ interface: /images/articles/wechat.png
 
 一共需要三步
 
-1. 在电脑上下载 altserver 软件
+1. 在一台电脑上下载 altserver 软件
 2. 通过电脑的 altserver 在你的手机上安装 altstore应用商店（欧盟官方第三方商店）
 3. 下载微信ipa文件到手机
 4. 打开手机的altstore安装ipa
 
-首先你需要一台电脑，在上面安装 AltServer
+首先你需要一台电脑，在上面安装 AltServer。
 
 ### 1. **下载AltServer**
 
-
-**AltServer** 让你可以通过自己的 Apple ID，把一些非 App Store 上的应用（.ipa 文件）安装到 iOS 设备上，基本上就是自己签名。
+**AltServer** 是一个非常强大的工具，让你可以通过自己的 Apple ID，把一些非 App Store 上的应用（.ipa 文件）安装到 iOS 设备上，基本上就是自己签名。
+也就是说不止是微信，你能想到的任何软件，都可以进行双开！
 
 如果你是windows电脑，请下载: https://pan.quark.cn/s/a05d22e58f29
-如果你是macos电脑，请下载：https://pan.quark.cn/s/5e026ce549fa
-
+如果你是macos苹果电脑，请下载：https://pan.quark.cn/s/5e026ce549fa
 
 先下载并安装 **AltServer**（适用于 macOS 或 Windows），然后把 iPhone 用 USB 连接到电脑，接着用 AltServer 安装 AltStore。
 
@@ -76,6 +75,10 @@ interface: /images/articles/wechat.png
 
 ### 6. **设置自动更新签名**
 
+这里设计到一个证书的概念，在苹果安装的应用都需要要有“证书”，
+
+AltStore 为我们提供了免费的证书。
+
 由于 AltStore 的签名有效期只有 7 天，所以你需要定期更新应用。
 
 更新的方式有两种：
@@ -86,6 +89,8 @@ interface: /images/articles/wechat.png
 你可以在 AltStore 设置中开启 **Background Refresh**，不过如果希望更精确的控制，建议使用快捷指令进行定时刷新。
 
 ![image](https://pic2.zhimg.com/v2-fbe770e4f5a1e26e700c94cfe6388901_r.jpg)
+
+如果你觉得太麻烦，可以一起和朋友拼购一份AppleDeveloper的证书，99刀一年，签一次就可以用一年了
 
 ---
 

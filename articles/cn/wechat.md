@@ -115,8 +115,5 @@ AltStore 为我们提供了免费的证书。
 
 如果你在双开过程中遇到任何问题，欢迎加我微信和添加群聊
 
-![](https://pub-661b0ffd786d45edbf52a76c125d28a7.r2.dev/6021736521154_.pic.jpg)
-
-![](https://pub-661b0ffd786d45edbf52a76c125d28a7.r2.dev/6041736521269_.pic.jpg)
 
 

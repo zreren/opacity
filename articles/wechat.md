@@ -2,7 +2,6 @@
 title: IOS微信双开教程，完全免费
 description: 通过 AltStore 自签名多开微信，苹果，IOS双开
 date: 2025-01-10
-interface: /images/articles/wechat.png
 ---
 
 > 请注意，双开和插件有一定风险，新注册的账号谨慎使用，新号的封控比较严格，另外，使用插件也是有风险的。不过第一次会有警告，如果出现警告之后就不要再使用了

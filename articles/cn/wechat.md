@@ -47,21 +47,28 @@ interface: /images/articles/wechat.png
 
 如果不想麻烦，直接下载现成的微信 IPA 包是最快的选择，它基本上已经去除了不必要的文件。
 
-这里分享一下我自用的 IPA 包 https://pan.quark.cn/s/affde76e8503
+这里分享一下我自用的 IPA 包 https://pan.quark.cn/s/affde76e8503 
 
 ### 4. **修改 IPA 文件（可选）**
 
 如果直接用下载的 IPA 安装第二个微信，会有一些问题，比如 URL Scheme 冲突、无法定制显示名称等。如果不在意这些，可以跳过这一步。
 
-如果想彻底解决这些问题，可以按以下步骤修改：
+如果你是小白，大师已经做好了一个给你改好的部分，直接下载即可：https://pan.quark.cn/s/578907e4ed88
 
+下面的这个修改就不用看了！直接跳到下一步去安装！
+
+如果你是大佬，有一定的计算机基础，可以按以下步骤修改：
 - 将 `.ipa` 文件重命名为 `.zip`，解压后进入 **Payload** 文件夹。
 - 找到 **WeChat.app**，右键点击，选择 **显示包内容**。
+
+打开大概就是这样，这个就是微信的打包文件了！可以肆意地进行修改
+![image](https://pub-661b0ffd786d45edbf52a76c125d28a7.r2.dev/6051736522440_.pic.jpg)
+
 - 删除 `Watch`、`WatchKit` 和 `Plugins` 等文件夹。
 - 打开 **info.plist** 文件，修改以下几个重要的值：
-    - **CFBundleDisplayName**: 微信 → DeChat
-    - **CFBundleIdentifier**: `com.tencent.xin` → `com.tencent.dechat`
-    - **CFBundleURLSchemes**: weixin → dechat
+    - **CFBundleDisplayName**: 微信 → YourChat
+    - **CFBundleIdentifier**: `com.tencent.xin` → `com.tencent.yourchat`
+    - **CFBundleURLSchemes**: weixin → yourchat
 
 修改完后，再把文件夹压缩回 `.ipa` 格式。
 
@@ -102,7 +109,6 @@ AltStore 为我们提供了免费的证书。
 通过这种方式，你可以免费实现微信双开的功能。虽然需要定期更新，但比起其他收费的方案，这种方法的性价比还是挺高的。如果你觉得操作复杂，可以一步一步来，慢慢掌握。
 
 如果你在双开过程中遇到任何问题，欢迎加我微信和添加群聊
-
 
 !()[https://pub-661b0ffd786d45edbf52a76c125d28a7.r2.dev/6021736521154_.pic.jpg]
 

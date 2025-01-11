@@ -52,13 +52,23 @@ interface: /images/articles/wechat.png
 
 如果不想麻烦，直接下载现成的微信 IPA 包是最快的选择，它基本上已经去除了不必要的文件。
 
-这里分享一下我自用的 IPA 包 https://pan.quark.cn/s/affde76e8503 
+这里分享一下我自用的 IPA 包 
+
+带插件版本：https://pan.quark.cn/s/affde76e8503 
+
+纯净版本：https://pan.quark.cn/s/af3eeb5fabff
+
+根据你的需求进行下载即可。纯净版本就是原版无插件功能的。
 
 ### 4. **修改 IPA 文件（可选）**
 
 如果直接用下载的 IPA 安装第二个微信，会有一些问题，比如 URL Scheme 冲突、无法定制显示名称等。如果不在意这些，可以跳过这一步。
 
-如果你是小白，大师已经做好了一个给你改好的部分，直接下载即可：https://pan.quark.cn/s/578907e4ed88
+如果你是小白，大师已经做好了一个给你改好的部分，
+直接下载即可：
+
+https://pan.quark.cn/s/578907e4ed88 （带插件版本）
+待补充 （不带带插件版本）
 
 下面的这个修改就不用看了！直接跳到下一步去安装！
 

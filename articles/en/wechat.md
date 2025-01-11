@@ -127,7 +127,10 @@ AltStore 为我们提供了免费的证书。
 > 太多人加了 暂时去掉了二维码 有问题可以在推特的评论区问我
 
 如果你需要视频教程，可以关注我的 YouTube频道，我下面会录个视频教你怎么操作
-https://www.youtube.com/@eren-dk4mv
+
+点击图片跳转到 Youtube 频道
+
+[![](https://pub-661b0ffd786d45edbf52a76c125d28a7.r2.dev/6071736578599_.pic.jpg)](https://www.youtube.com/@eren-dk4mv)
 
 
 欢迎关注我的公众号，分享各种黑科技👋

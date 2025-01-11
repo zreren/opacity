@@ -129,10 +129,18 @@
 }
 
 .md-post-code {
-  background-color: #101010;
+  background-color: var(--code-bg, #f3f3f3);
+  color: var(--code-color, #333);
   padding: 0.2em 0.4em;
   border-radius: 3px;
   font-family: monospace;
+}
+
+@media (prefers-color-scheme: dark) {
+  .md-post-code {
+    background-color: #101010;
+    color: #fff;
+  }
 }
 
 .md-post-codeblock {

@@ -137,7 +137,7 @@ const Home = ({ postData, links }) => {
             </NextLink>
           </Box> */}
         </Section>
-        <ProjectSwiper postData={postData}></ProjectSwiper>
+        {/* <ProjectSwiper postData={postData}></ProjectSwiper> */}
         <Section delay={0.3}>
           <Heading as="h3" variant="section-title">
             Links

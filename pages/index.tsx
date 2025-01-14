@@ -140,7 +140,7 @@ const Home = ({ postData, links }) => {
         {/* <ProjectSwiper postData={postData}></ProjectSwiper> */}
         <Section delay={0.3}>
           <Heading as="h3" variant="section-title">
-            Links
+            My friends
           </Heading>
           {/* <List
             sx={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12 }}
@@ -478,7 +478,7 @@ const Home = ({ postData, links }) => {
         </Section>
         <Section delay={0.3}>
           <Heading as="h3" variant="section-title">
-            On the web
+            Contact
           </Heading>
           <List>
             <ListItem>
@@ -502,13 +502,13 @@ const Home = ({ postData, links }) => {
                   colorScheme="teal"
                   leftIcon={<IoLogoYoutube />}
                 >
-                  Youtube @Eren
+                  Youtube @Opacity大师实验室
                 </Button>
               </Link>
             </ListItem>
             <ListItem>
               <Link
-                href="mailto:simplelogin-newsletter.2tws4@simplelogin.com"
+                href="mailto:made@opacity.ink"
                 target="_blank"
               >
                 <Button
@@ -516,7 +516,7 @@ const Home = ({ postData, links }) => {
                   colorScheme="teal"
                   leftIcon={<SiGmail />}
                 >
-                  Mail Me @Eren
+                  Mail Me @Opacity
                 </Button>
               </Link>
             </ListItem>

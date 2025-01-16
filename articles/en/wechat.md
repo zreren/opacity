@@ -1,6 +1,6 @@
 ---
-title: IOS微信双开教程，完全免费
-description: 通过 AltStore 自签名多开微信，苹果，IOS双开
+title: 通过Altstore实现IOS微信双开教程
+description: 通过 AltStore 自签名多开微信，苹果，IOS双开，完全免费。altserver下载，altstore下载
 date: 2025-01-10
 interface: /images/articles/wechat.png
 ---

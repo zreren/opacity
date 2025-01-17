@@ -8,8 +8,8 @@ const variants = {
   exit: { opacity: 0, x: -0, y: 20 }
 }
 
-const Layout = ({ children, title }) => {
-  const t = `${title} - opacity`
+const Layout = ({ children, title, keyword }) => {
+  const t = `${title} - 欧opacity实验室`
   return (
     <motion.article
       initial="hidden"
@@ -24,6 +24,7 @@ const Layout = ({ children, title }) => {
           <Head>
             <title>{t}</title>
             <meta name="twitter:title" content={t} />
+            <meta name="keywords" content={keyword} />
             <meta property="og:title" content={t} />
             <script async src="https://us.umami.is/script.js" data-website-id="3a211f2c-c381-4a60-848a-6833a7932f35"></script>
           </Head>

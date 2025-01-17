@@ -8,8 +8,10 @@ const variants = {
   exit: { opacity: 0, x: -0, y: 20 }
 }
 
-const Layout = ({ children, title, keyword, canonicalUrl }) => {
+const Layout = ({ children, title, keyword, canonicalUrl, description, image }) => {
   const t = `${title} - 欧opacity实验室`
+  const siteUrl = 'https://www.opacity.ink'
+
   return (
     <motion.article
       initial="hidden"
@@ -23,10 +25,36 @@ const Layout = ({ children, title, keyword, canonicalUrl }) => {
         {title && (
           <Head>
             <title>{t}</title>
-            <meta name="twitter:title" content={t} />
+            {/* Basic Meta Tags */}
             <meta name="keywords" content={keyword} />
+            <meta name="description" content={description} />
+            <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+            {/* Open Graph Meta Tags */}
             <meta property="og:title" content={t} />
+            <meta property="og:description" content={description} />
+            <meta property="og:type" content="article" />
+            <meta property="og:url" content={canonicalUrl || siteUrl} />
+            {image && <meta property="og:image" content={`${siteUrl}${image}`} />}
+            <meta property="og:site_name" content="欧opacity实验室" />
+            <meta property="og:locale" content="zh_CN" />
+
+            {/* X (Twitter) Card Meta Tags */}
+            <meta name="twitter:card" content="summary_large_image" />
+            <meta name="twitter:site" content="@opacity_ink" />
+            <meta name="twitter:title" content={t} />
+            <meta name="twitter:description" content={description} />
+            {image && <meta name="twitter:image" content={`${siteUrl}${image}`} />}
+            <meta name="x:card" content="summary_large_image" />
+            <meta name="x:site" content="@opacity_ink" />
+            <meta name="x:title" content={t} />
+            <meta name="x:description" content={description} />
+            {image && <meta name="x:image" content={`${siteUrl}${image}`} />}
+
+            {/* Canonical URL */}
             {canonicalUrl && <link rel="canonical" href={canonicalUrl} />}
+
+            {/* Analytics */}
             <script async src="https://us.umami.is/script.js" data-website-id="3a211f2c-c381-4a60-848a-6833a7932f35"></script>
           </Head>
         )}

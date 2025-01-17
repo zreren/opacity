@@ -55,6 +55,8 @@ export default function Article({ postData }) {
     <Layout
       title={postData.title}
       keyword={postData.keyword}
+      description={postData.description}
+      image={postData.interface}
       canonicalUrl={`https://www.opacity.ink/blog/${postData.id}`}
     >
       <Container maxWidth={'4xl'} className="content-container">

@@ -52,68 +52,80 @@ export default function Article({ postData }) {
   const Hr = () => <hr className="md-post-hr" />
   const Blockquote = ({ children }) => <blockquote className="md-post-blockquote">{children}</blockquote>
   return (
-    <Layout
-      title={postData.title}
-      keywords={postData.keywords}
-      description={postData.description}
-      image={postData.interface}
-      canonicalUrl={`https://www.opacity.ink/blog/${postData.id}`}
-    >
-      <Container maxWidth={'4xl'} className="content-container">
-        <Head>
-          <meta name="twitter:title" content={postData.title} />
-          <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:description" content={postData.description} />
-          <meta
-            name="twitter:image"
-            content={`https://www.opacity.ink${postData?.interface}?v=${Math.random()}`}
-          />
-        </Head>
+    <>
+      <!-- Google Tag Manager -->
+      <script>(function(w,d,s,l,i){w[l] = w[l] || [];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5WX4K89V');</script>
+      <!-- End Google Tag Manager -->
+      <Layout
+        title={postData.title}
+        keywords={postData.keywords}
+        description={postData.description}
+        image={postData.interface}
+        canonicalUrl={`https://www.opacity.ink/blog/${postData.id}`}
+      >
+        <Container maxWidth={'4xl'} className="content-container">
+          <Head>
+            <meta name="twitter:title" content={postData.title} />
+            <meta name="twitter:card" content="summary_large_image" />
+            <meta name="twitter:description" content={postData.description} />
+            <meta
+              name="twitter:image"
+              content={`https://www.opacity.ink${postData?.interface}?v=${Math.random()}`}
+            />
+          </Head>
 
-        <Title>
-          {postData.title} <Badge>{postData.dateYMD}</Badge>
-        </Title>
-        <Text as="sup">{postData.wordcount}</Text>
-        {/* <MarkdownPreview source={postData.md}></MarkdownPreview> */}
-        {/* <div dangerouslySetInnerHTML={{ __html: html }} /> */}
-        <Markdown
-          remarkPlugins={[remarkGfm]}
-          components={{
-            p: P,
-            li: Li,
-            ul: Ul,
-            ol: Ol,
-            h1: H1,
-            h2: H2,
-            h3: H3,
-            h4: H4,
-            hr: Hr,
-            blockquote: Blockquote,
-            code({ node, inline, className, children, ...props }: any) {
-              const match = /language-(\w+)/.exec(className || '')
-              return !inline && match ? (
-                <SyntaxHighlighter
-                  language={match[1]}
-                  PreTag="div"
-                  className="md-post-codeblock"
-                  {...props}
-                >
-                  {String(children).replace(/\n$/, '')}
-                </SyntaxHighlighter>
-              ) : (
-                <code className="md-post-code" {...props}>
-                  {children}
-                </code>
-              )
-            }
-          }}
-        >
-          {postData.md}
-          <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5WX4K89V"
-            height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-        </Markdown>
-      </Container>
-    </Layout>
+          <Title>
+            {postData.title} <Badge>{postData.dateYMD}</Badge>
+          </Title>
+          <Text as="sup">{postData.wordcount}</Text>
+          {/* <MarkdownPreview source={postData.md}></MarkdownPreview> */}
+          {/* <div dangerouslySetInnerHTML={{ __html: html }} /> */}
+          <Markdown
+            remarkPlugins={[remarkGfm]}
+            components={{
+              p: P,
+              li: Li,
+              ul: Ul,
+              ol: Ol,
+              h1: H1,
+              h2: H2,
+              h3: H3,
+              h4: H4,
+              hr: Hr,
+              blockquote: Blockquote,
+              code({ node, inline, className, children, ...props }: any) {
+                const match = /language-(\w+)/.exec(className || '')
+                return !inline && match ? (
+                  <SyntaxHighlighter
+                    language={match[1]}
+                    PreTag="div"
+                    className="md-post-codeblock"
+                    {...props}
+                  >
+                    {String(children).replace(/\n$/, '')}
+                  </SyntaxHighlighter>
+                ) : (
+                  <code className="md-post-code" {...props}>
+                    {children}
+                  </code>
+                )
+              }
+            }}
+          >
+            {postData.md}
+
+          </Markdown>
+        </Container>
+      </Layout>
+      <!-- Google Tag Manager (noscript) -->
+      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5WX4K89V"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <!-- End Google Tag Manager (noscript) -->
+    </>
   )
 }
 // dynamic route IDs

@@ -8,7 +8,7 @@ const variants = {
   exit: { opacity: 0, x: -0, y: 20 }
 }
 
-const Layout = ({ children, title, keyword }) => {
+const Layout = ({ children, title, keyword, canonicalUrl }) => {
   const t = `${title} - 欧opacity实验室`
   return (
     <motion.article
@@ -26,6 +26,7 @@ const Layout = ({ children, title, keyword }) => {
             <meta name="twitter:title" content={t} />
             <meta name="keywords" content={keyword} />
             <meta property="og:title" content={t} />
+            {canonicalUrl && <link rel="canonical" href={canonicalUrl} />}
             <script async src="https://us.umami.is/script.js" data-website-id="3a211f2c-c381-4a60-848a-6833a7932f35"></script>
           </Head>
         )}

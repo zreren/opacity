@@ -52,7 +52,11 @@ export default function Article({ postData }) {
   const Hr = () => <hr className="md-post-hr" />
   const Blockquote = ({ children }) => <blockquote className="md-post-blockquote">{children}</blockquote>
   return (
-    <Layout title={postData.title} keyword={postData.keyword}>
+    <Layout
+      title={postData.title}
+      keyword={postData.keyword}
+      canonicalUrl={`https://www.opacity.ink/blog/${postData.id}`}
+    >
       <Container maxWidth={'4xl'} className="content-container">
         <Head>
           <meta name="twitter:title" content={postData.title} />

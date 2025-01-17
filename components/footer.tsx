@@ -34,7 +34,7 @@ const Footer = () => {
             <Link>Contact</Link>
           </NextLink>
         </Stack>
-        <Text>© {new Date().getFullYear()} Your Name. All rights reserved</Text>
+        <Text>© {new Date().getFullYear()} 欧Opacity. All rights reserved</Text>
       </Container>
     </Box>
   )

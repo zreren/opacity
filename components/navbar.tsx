@@ -72,13 +72,10 @@ const Navbar = props => {
           flexGrow={1}
           mt={{ base: 4, md: 0 }}
         >
-          {/* <LinkItem href="/works" path={path}>
-            Projects
-          </LinkItem> */}
           <LinkItem href="/blog" path={path}>
             Blog
           </LinkItem>
-          <LinkItem
+          {/* <LinkItem
             target="_blank"
             href="https://github.com/zreren"
             path={path}
@@ -89,16 +86,7 @@ const Navbar = props => {
           >
             <IoLogoGithub />
             Source
-          </LinkItem>
-          <LinkItem href="/privacy-policy" path={path}>
-            Privacy Policy
-          </LinkItem>
-          <LinkItem href="/terms" path={path}>
-            Terms
-          </LinkItem>
-          <LinkItem href="/contact" path={path}>
-            Contact
-          </LinkItem>
+          </LinkItem> */}
         </Stack>
 
         <Box flex={1} textAlign="right">
@@ -124,18 +112,12 @@ const Navbar = props => {
                 aria-label="Options"
               />
               <MenuList>
-                <NextLink href="/" passHref>
-                  <MenuItem as={Link}>About</MenuItem>
+                <NextLink href="/blog" passHref>
+                  <MenuItem as={Link}>Blog</MenuItem>
                 </NextLink>
-                {/* <NextLink href="/works" passHref>
-                  <MenuItem as={Link}>Projects</MenuItem>
-                </NextLink>
-                // <NextLink href="/blog" passHref>
-                //   <MenuItem as={Link}>Blog</MenuItem>
-                // </NextLink> */}
-                <MenuItem as={Link} href="https://github.com/zreren">
+                {/* <MenuItem as={Link} href="https://github.com/zreren">
                   View Source
-                </MenuItem>
+                </MenuItem> */}
               </MenuList>
             </Menu>
           </Box>

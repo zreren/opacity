@@ -109,6 +109,8 @@ export default function Article({ postData }) {
           }}
         >
           {postData.md}
+          <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5WX4K89V"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </Markdown>
       </Container>
     </Layout>

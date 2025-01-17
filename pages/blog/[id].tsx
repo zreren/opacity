@@ -139,7 +139,6 @@ export default function Article({ postData }) {
         </noscript>
       )}
     </>
-    </>
   )
 }
 // dynamic route IDs

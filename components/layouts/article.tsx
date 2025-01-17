@@ -26,7 +26,7 @@ const Layout = ({ children, title, keywords, canonicalUrl, description, image })
           <Head>
             <title>{t}</title>
             {/* Basic Meta Tags */}
-            <meta name="keywords" content={keywords} />
+            {/* <meta name="keywords" content={keywords} /> */}
             <meta name="description" content={description} />
             <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
 

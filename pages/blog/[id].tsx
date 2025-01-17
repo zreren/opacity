@@ -54,7 +54,7 @@ export default function Article({ postData }) {
   return (
     <Layout
       title={postData.title}
-      keyword={postData.keyword}
+      keywords={postData.keywords}
       description={postData.description}
       image={postData.interface}
       canonicalUrl={`https://www.opacity.ink/blog/${postData.id}`}

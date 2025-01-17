@@ -8,7 +8,7 @@ const variants = {
   exit: { opacity: 0, x: -0, y: 20 }
 }
 
-const Layout = ({ children, title, keyword, canonicalUrl, description, image }) => {
+const Layout = ({ children, title, keywords, canonicalUrl, description, image }) => {
   const t = `${title} - 欧opacity实验室`
   const siteUrl = 'https://www.opacity.ink'
 
@@ -26,7 +26,7 @@ const Layout = ({ children, title, keyword, canonicalUrl, description, image }) 
           <Head>
             <title>{t}</title>
             {/* Basic Meta Tags */}
-            <meta name="keywords" content={keyword} />
+            <meta name="keywords" content={keywords} />
             <meta name="description" content={description} />
             <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
 

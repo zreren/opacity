@@ -3,7 +3,7 @@ title: Git Gui工具GitKraken推荐
 description: 我推荐的一款Git Gui工具
 date: 2022-09-01
 interface: /git.png
-keyword: "GitKraken, Git GUI, version control, development tools, Electron"
+keywords: "GitKraken, Git GUI, version control, development tools, Electron"
 ---
 # 简介
 

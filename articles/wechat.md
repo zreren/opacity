@@ -3,7 +3,15 @@ title: 通过Altstore实现IOS微信双开教程
 description: 通过 AltStore 自签名多开微信，苹果，IOS双开，完全免费。altserver下载，altstore下载
 date: 2025-01-10
 interface: /images/articles/wechat.png
-keywords:"IOS微信双开教程, AltStore, 微信双开, AltServer下载, 微信IPA文件, 修改IPA文件, 自动更新签名, iPhone应用安装"
+keywords: 
+  - IOS微信双开教程
+  - AltStore
+  - 微信双开
+  - AltServer下载
+  - 微信IPA文件
+  - 修改IPA文件
+  - 自动更新签名
+  - iPhone应用安装
 ---
 
 > 请注意，双开和插件有一定风险，新注册的账号谨慎使用，新号的封控比较严格，另外，使用插件也是有风险的。不过第一次会有警告，如果出现警告之后就不要再使用了

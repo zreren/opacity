@@ -3,7 +3,14 @@ title: 关于我的赚钱观念
 description: 理解赚钱的基本思维方式
 date: 2025-01-15
 interface: /images/articles/money-mindset.png
-keywords:"赚钱思维, 创业心态, 商业思维, 市场营销, 价值创造, 个人成长, 行动力"
+keywords:
+  - 赚钱思维
+  - 创业心态
+  - 商业思维
+  - 市场营销
+  - 价值创造
+  - 个人成长
+  - 行动力
 ---
 
 其实我觉得赚钱并不是一件难事。

@@ -3,7 +3,10 @@ title: 2025港卡开户攻略
 description: 2025港卡开户攻略
 date: 2025-01-06
 interface: /images/articles/cardhk.png
-keywords: "香港银行卡，香港，银行卡"
+keywords:
+  - 香港银行卡
+  - 香港
+  - 银行卡
 ---
 
 本攻略将介绍如何在香港开设银行账户，包括实体银行和虚拟银行，以及线上和线下开户的流程、注意事项和所需材料。

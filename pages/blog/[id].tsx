@@ -20,6 +20,7 @@ import 'highlight.js/styles/github.css' // github样式文件
 import hljs from 'highlight.js/lib/core' // highlight.js核心
 import javascript from 'highlight.js/lib/languages/javascript' // 单独使用js部分
 // import Head from 'next/head'
+import Script from 'next/script'
 
 {
   /* <p class="time"><time datetime="${postData.dateYMD}">${postData.dateFriendly}</time></p> */
@@ -53,13 +54,7 @@ export default function Article({ postData }) {
   const Blockquote = ({ children }) => <blockquote className="md-post-blockquote">{children}</blockquote>
   return (
     <>
-      <!-- Google Tag Manager -->
-      <script>(function(w,d,s,l,i){w[l] = w[l] || [];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-5WX4K89V');</script>
-      <!-- End Google Tag Manager -->
+
       <Layout
         title={postData.title}
         keywords={postData.keywords}
@@ -76,6 +71,18 @@ new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
               name="twitter:image"
               content={`https://www.opacity.ink${postData?.interface}?v=${Math.random()}`}
             />
+            <Script
+              id="gtm-script"
+              strategy="afterInteractive"
+            >
+              {`
+          (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+          })(window,document,'script','dataLayer','GTM-5WX4K89V');
+        `}
+            </Script>
           </Head>
 
           <Title>
@@ -121,10 +128,17 @@ new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
           </Markdown>
         </Container>
       </Layout>
-      <!-- Google Tag Manager (noscript) -->
-      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5WX4K89V"
-        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-      <!-- End Google Tag Manager (noscript) -->
+      {typeof window !== 'undefined' && (
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-5WX4K89V"
+            height="0"
+            width="0"
+            style={{ display: 'none', visibility: 'hidden' }}
+          />
+        </noscript>
+      )}
+    </>
     </>
   )
 }

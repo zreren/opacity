@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+Allow: /blog/
+Allow: /articles/
+Allow: /images/
+
+# Disallow potentially sensitive directories
+Disallow: /api/
+Disallow: /_next/
+Disallow: /_vercel/
+
+# Sitemap
+Sitemap: https://www.opacity.ink/sitemap.xml

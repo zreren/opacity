@@ -3,6 +3,15 @@ title: Ultra Mobile PayGo - 经济实惠的美国实体电话卡选择
 description: 详细介绍 Ultra Mobile PayGo 的功能特点、资费标准及充值方法
 date: 2024-01-10
 interface: /images/articles/us-paygo.png
+keywords:
+  - Ultra Mobile PayGo
+  - 美国电话卡
+  - 实体电话卡
+  - WiFi Calling
+  - 跨境电商
+  - 月租电话卡
+  - 美国手机号
+  - T-Mobile
 ---
 
 Ultra Mobile PayGo 是一款经济实惠的美国实体电话卡，月租仅需 3 美元，非常适合需要美国电话号码的跨境电商从业者使用。本文将详细介绍这款电话卡的特点和使用方法。
@@ -50,6 +59,7 @@ Ultra Mobile PayGo 是美国移动运营商（Wireless Carrier）提供的实体
    - 城市：Los Angeles
    - 州：CA
    - 邮编：90012
+这里地址最好手动在Google Map找一下附近的地址，太多人使用可能会风控
 
 ### 充值方式
 
@@ -67,10 +77,8 @@ Ultra Mobile PayGo 是美国移动运营商（Wireless Carrier）提供的实体
 ### 获取途径
 
 1. **国内购买**
-   - 淘宝、闲鱼等电商平台
-   - 价格相对合理
-   - 发货快捷（1-3天到货）
-   - 提供售后咨询服务
+我是在京东购买的 https://u.jd.com/sG8sWUm
+商家代激活就是拿到卡可以直接用，自己激活需要填一些表单和注册账号
 
 2. **eBay 购买**
    - 官方推荐渠道

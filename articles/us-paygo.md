@@ -59,6 +59,7 @@ Ultra Mobile PayGo 是美国移动运营商（Wireless Carrier）提供的实体
    - 城市：Los Angeles
    - 州：CA
    - 邮编：90012
+这里地址最好手动在Google Map找一下附近的地址，太多人使用可能会风控
 
 ### 充值方式
 
@@ -76,10 +77,8 @@ Ultra Mobile PayGo 是美国移动运营商（Wireless Carrier）提供的实体
 ### 获取途径
 
 1. **国内购买**
-   - 淘宝、闲鱼等电商平台
-   - 价格相对合理
-   - 发货快捷（1-3天到货）
-   - 提供售后咨询服务
+我是在京东购买的 https://u.jd.com/sG8sWUm
+商家代激活就是拿到卡可以直接用，自己激活需要填一些表单和注册账号
 
 2. **eBay 购买**
    - 官方推荐渠道

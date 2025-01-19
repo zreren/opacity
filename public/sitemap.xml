@@ -2,44 +2,64 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- Main pages -->
   <url>
-    <loc>https://opacity.me/</loc>
+    <loc>https://www.opacity.ink/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   
   <!-- Blog pages -->
   <url>
-    <loc>https://opacity.me/blog/money-mindset</loc>
+    <loc>https://www.opacity.ink/blog/money-mindset</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://opacity.me/blog/stripe-series-1</loc>
+    <loc>https://www.opacity.ink/blog/stripe-series-1</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://opacity.me/blog/mental-cost</loc>
+    <loc>https://www.opacity.ink/blog/stripe-series-2</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://opacity.me/blog/supabase-tips</loc>
+    <loc>https://www.opacity.ink/blog/mental-cost</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://opacity.me/blog/us-company</loc>
+    <loc>https://www.opacity.ink/blog/supabase-tips</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://opacity.me/blog/us-paygo</loc>
+    <loc>https://www.opacity.ink/blog/us-company</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://opacity.me/blog/wechat</loc>
+    <loc>https://www.opacity.ink/blog/us-paygo</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.opacity.ink/blog/wechat</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.opacity.ink/blog/japan-visa</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.opacity.ink/blog/hkcard</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.opacity.ink/blog/gittool</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

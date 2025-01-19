@@ -101,7 +101,7 @@ async function processMarkdownFiles() {
                         const imageOutputPath = path.join('public', 'images', 'articles', imageName);
                         
                         await generateTitleImage(title, imageOutputPath);
-                        console.log(`Generated image for: ${file}`);
+                        // console.log(`Generated image for: ${file}`);
                         
                         // 添加 interface 到 markdown 内容
                         const interfacePath = `/images/articles/${imageName}`;
@@ -122,7 +122,7 @@ async function processMarkdownFiles() {
                         await fs.mkdir(path.dirname(targetPathRoot), { recursive: true });
                         await fs.writeFile(targetPathRoot, content);
 
-                        console.log(`Updated and copied ${file} to target directories`);
+                        // console.log(`Updated and copied ${file} to target directories`);
                     }
                 }
             }

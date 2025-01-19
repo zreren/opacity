@@ -16,13 +16,13 @@ keywords:
 
 Ultra Mobile PayGo 是一款经济实惠的美国实体电话卡，月租仅需 3 美元，非常适合需要美国电话号码的跨境电商从业者使用。本文将详细介绍这款电话卡的特点和使用方法。
 
-!(utralpaygo)[https://pub-661b0ffd786d45edbf52a76c125d28a7.r2.dev/640.webp]
+![utralpaygo](https://pub-661b0ffd786d45edbf52a76c125d28a7.r2.dev/640.webp)
 
 我是在京东购买的
 
 https://u.jd.com/sG8sWUm
 
-!(jdlinks)[https://pub-661b0ffd786d45edbf52a76c125d28a7.r2.dev/640%20(1).webp]
+![jdlinks](https://pub-661b0ffd786d45edbf52a76c125d28a7.r2.dev/640%20(1).webp)
 
 ### 为什么选择 Ultra Mobile PayGo？
 

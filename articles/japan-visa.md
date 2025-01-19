@@ -2,7 +2,6 @@
 title: 日本签证办理完整指南
 description: 详细介绍日本旅游签证申请流程、所需材料及注意事项
 date: 2024-01-10
-# interface: /i18n.png
 keywords:
   - 日本签证
   - 旅游签证
@@ -10,6 +9,7 @@ keywords:
   - 日本旅游
   - 签证材料
   - 申请流程
+interface: /images/articles/japan-visa.png
 ---
 
 日本是许多人向往的旅游目的地，本文将详细介绍如何申请日本旅游签证，包括准备材料、申请流程以及一些实用建议。

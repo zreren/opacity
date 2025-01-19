@@ -5,36 +5,72 @@ import {
   Stack,
   Text,
   Link,
-  useColorModeValue
+  useColorModeValue,
+  Divider,
+  VStack,
+  HStack
 } from '@chakra-ui/react'
+import Image from 'next/image'
 
 const Footer = () => {
+  const bgColor = useColorModeValue('gray.50', 'gray.900')
+  const textColor = useColorModeValue('gray.600', 'gray.300')
+  const borderColor = useColorModeValue('gray.200', 'gray.700')
+
   return (
     <Box
-      bg={useColorModeValue('gray.50', 'gray.900')}
-      color={useColorModeValue('gray.700', 'gray.200')}
+      as="footer"
+      color={textColor}
+      borderTop="1px"
+      borderColor={borderColor}
       mt={8}
     >
-      <Container
-        as={Stack}
-        maxW={'4xl'}
-        py={4}
-        spacing={4}
-        justify={'center'}
-        align={'center'}
-      >
-        <Stack direction={'row'} spacing={6}>
-          <NextLink href="/privacy-policy" passHref>
-            <Link>Privacy Policy</Link>
-          </NextLink>
-          <NextLink href="/terms" passHref>
-            <Link>Terms</Link>
-          </NextLink>
-          <NextLink href="/contact" passHref>
-            <Link>Contact</Link>
-          </NextLink>
-        </Stack>
-        <Text>© {new Date().getFullYear()} 欧Opacity. All rights reserved</Text>
+      <Container maxW={'4xl'} py={8}>
+        <VStack spacing={8}>
+          <HStack spacing={8} wrap="wrap" justify="center">
+            <NextLink href="/privacy-policy" passHref>
+              <Link _hover={{ color: useColorModeValue('blue.500', 'blue.300') }}>
+                Privacy Policy
+              </Link>
+            </NextLink>
+            <NextLink href="/terms" passHref>
+              <Link _hover={{ color: useColorModeValue('blue.500', 'blue.300') }}>
+                Terms
+              </Link>
+            </NextLink>
+            <NextLink href="/contact" passHref>
+              <Link _hover={{ color: useColorModeValue('blue.500', 'blue.300') }}>
+                Contact
+              </Link>
+            </NextLink>
+            <Link
+              href="https://www.youtube.com/channel/UCV54jEHWBI7MDIhIVxsu-fw"
+              isExternal
+              _hover={{ color: useColorModeValue('red.500', 'red.300') }}
+            >
+              YouTube
+            </Link>
+          </HStack>
+          {/* 
+          <Image
+            src="/wechatchannel.png"
+            alt="WeChat QR Code"
+            width={460}
+            height={260}
+            style={{
+              margin: '0 auto',
+              borderRadius: '8px',
+              boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
+              objectFit: 'contain'
+            }}
+          /> */}
+
+          <Divider borderColor={borderColor} />
+
+          <Text fontSize="sm" textAlign="center">
+            © {new Date().getFullYear()} 欧Opacity. All rights reserved
+          </Text>
+        </VStack>
       </Container>
     </Box>
   )

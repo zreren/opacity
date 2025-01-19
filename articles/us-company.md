@@ -11,6 +11,7 @@ keywords:
   - 美国公司税务
   - 公司注册流程
   - C-Corporation
+interface: /images/articles/us-company.png
 ---
 
 在美国开公司是很多创业者和投资者的选择，本文将详细介绍美国公司注册的全过程，帮助你了解各类公司形式及注册要点。

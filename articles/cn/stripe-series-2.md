@@ -3,6 +3,13 @@ title: Stripe系列(二)：在 Astro 中优雅地接入 Stripe 支付
 description: 从实战角度详细介绍如何在 Astro 项目中集成 Stripe 支付功能
 date: 2024-03-21
 interface: /images/articles/stripe-series-2.png
+keywords:
+  - stripe
+  - astro
+  - payment integration
+  - subscription
+  - web development
+  - e-commerce
 ---
 
 上一篇文章我们讲了如何申请 Stripe 账户，这次让我来分享下在 Astro 项目中接入 Stripe 支付的实战经验。我会以一个实际的订阅支付场景为例，展示完整的开发流程。

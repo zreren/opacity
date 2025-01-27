@@ -10,7 +10,7 @@ interface: /images/articles/deepseek-prompt.png
 
 最近在技术社区观察到有趣现象：大量用户仍在用传统指令型大模型的prompt模板测试DeepSeek，得出"效果平平"的结论后便草率放弃。这种错位就像给跑车加注柴油——不是引擎不行，而是你根本没用对燃料！
 
-![图片](https://mmbiz.qpic.cn/mmbiz_png/Tgiaiaa6T8lGTlo3yG2SzSNMVUPsibq46DkuP4QGpib6uSNFN4wKSicaI1mW91CmQkes0wWGjJ1H3jkricGVw6ZzkpRg/640?wx_fmt=png&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+![图片](https://pub-661b0ffd786d45edbf52a76c125d28a7.r2.dev/any/6581737982362_.pic.jpg)
 
 在 DeepSeek的原论文中也提到尽可能让模型自己思考而不给出具体操作步骤。（如果需要论文中英版本，可以在后台发送“论文”获取 ）
 
@@ -48,9 +48,8 @@ interface: /images/articles/deepseek-prompt.png
     ```
     
 
-![图片](data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='1px' height='1px' viewBox='0 0 1 1' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3E%3C/title%3E%3Cg stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' fill-opacity='0'%3E%3Cg transform='translate(-249.000000, -126.000000)' fill='%23FFFFFF'%3E%3Crect x='249' y='126' width='1' height='1'%3E%3C/rect%3E%3C/g%3E%3C/g%3E%3C/svg%3E)
+![图片](https://pub-661b0ffd786d45edbf52a76c125d28a7.r2.dev/any/6591737982372_.pic.jpg)
 
-![图片](data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='1px' height='1px' viewBox='0 0 1 1' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3E%3C/title%3E%3Cg stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' fill-opacity='0'%3E%3Cg transform='translate(-249.000000, -126.000000)' fill='%23FFFFFF'%3E%3Crect x='249' y='126' width='1' height='1'%3E%3C/rect%3E%3C/g%3E%3C/g%3E%3C/svg%3E)
 
 ## 三、技术原理揭秘：为什么传统prompt不再适用
 
@@ -170,10 +169,12 @@ DeepSeek的架构创新在于其**双通道推理引擎**：
 
 · 需高隐私保障的企业级场景
 
-1.  ![图片](data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='1px' height='1px' viewBox='0 0 1 1' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3E%3C/title%3E%3Cg stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' fill-opacity='0'%3E%3Cg transform='translate(-249.000000, -126.000000)' fill='%23FFFFFF'%3E%3Crect x='249' y='126' width='1' height='1'%3E%3C/rect%3E%3C/g%3E%3C/g%3E%3C/svg%3E)
+1.  
+
+![图片](https://pub-661b0ffd786d45edbf52a76c125d28a7.r2.dev/any/6601737982387_.pic.jpg)
     
 
-![图片](data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='1px' height='1px' viewBox='0 0 1 1' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3E%3C/title%3E%3Cg stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' fill-opacity='0'%3E%3Cg transform='translate(-249.000000, -126.000000)' fill='%23FFFFFF'%3E%3Crect x='249' y='126' width='1' height='1'%3E%3C/rect%3E%3C/g%3E%3C/g%3E%3C/svg%3E)
+![图片](https://pub-661b0ffd786d45edbf52a76c125d28a7.r2.dev/any/6611737982392_.pic.jpg)
 
 下次当你准备输入prompt时，不妨先问自己：我是在指挥打字员，还是在激发战略顾问？答案的不同，将决定你收获的是机械重复的文本，还是价值千金的洞见。
 

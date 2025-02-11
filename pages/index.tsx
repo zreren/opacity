@@ -467,7 +467,22 @@ const Home = ({ postData, links }) => {
                 </Button>
               </Link>
             </ListItem>
-
+            <ListItem>
+              <Link
+                href="https://www.setupyourpay.com"
+                target="_blank"
+                rel="follow"
+                title="A platform for managing international payments and compliance"
+              >
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<IoNewspaperOutline />}
+                >
+                  SetupYourPay - International Payment Solutions
+                </Button>
+              </Link>
+            </ListItem>
           </List>
         </Section>
 

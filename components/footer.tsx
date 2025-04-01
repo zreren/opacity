@@ -50,6 +50,13 @@ const Footer = () => {
             >
               YouTube
             </Link>
+            <Link
+              href="https://www.creem.io/bip/opacity"
+              isExternal
+              _hover={{ color: useColorModeValue('purple.500', 'purple.300') }}
+            >
+              Creem注册
+            </Link>
           </HStack>
           {/* 
           <Image
